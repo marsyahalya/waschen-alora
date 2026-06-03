@@ -2,14 +2,45 @@ import { Metadata } from 'next';
 import { AboutClient } from './AboutClient';
 
 export const metadata: Metadata = {
-  title: 'About Us | Waschen Alora Indonesia',
-  description: 'Learn more about PT Waschen Alora Indonesia, our Vision & Mission, our PRECISE corporate values, and our employee programs including Alora Award, Alora Outing, and Alora Academy.',
+  title: 'Tentang Kami',
+  description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat PRECISE, serta program peningkatan kualitas tim seperti Alora Award, Alora Outing, dan Alora Academy.',
   openGraph: {
-    title: 'About Us | Waschen Alora Indonesia',
-    description: 'Discover the team, values, and vision behind PT Waschen Alora Indonesia. Dedicated to hygiene, resilience, and operational excellence.',
+    title: 'Tentang Kami | Waschen Alora Indonesia',
+    description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat PRECISE, serta program peningkatan kualitas tim.',
+    url: 'https://waschen-alora.com/about',
+    siteName: 'Waschen Alora Indonesia',
+    locale: 'id_ID',
+    type: 'website',
   }
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://waschen-alora.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tentang Kami",
+        "item": "https://waschen-alora.com/about"
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <AboutClient />
+    </>
+  );
 }
