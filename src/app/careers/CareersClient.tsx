@@ -83,9 +83,9 @@ export const CareersClient: FC = () => {
         } else {
           setError(payload.error || 'Failed to fetch careers');
         }
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error('Failed to load careers:', err);
-        setError(err.message || 'An error occurred while fetching careers');
+        setError(err instanceof Error ? err.message : 'An error occurred while fetching careers');
       } finally {
         setLoading(false);
       }
@@ -127,7 +127,7 @@ export const CareersClient: FC = () => {
   return (
     <div className="min-h-screen bg-white font-poppins">
       {/* Hero Section */}
-      <section className="pt-40 pb-16 bg-gradient-to-br from-[#49122E] via-[#3d0f25] to-[#2d0a1b] relative overflow-hidden">
+      <section className="pt-32 md:pt-40 pb-12 md:pb-16 bg-gradient-to-br from-[#49122E] via-[#3d0f25] to-[#2d0a1b] relative overflow-hidden">
         {/* Decorative shapes */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 right-10 w-96 h-96 bg-[#fc8018]/10 rounded-full blur-[120px]" />
@@ -135,21 +135,21 @@ export const CareersClient: FC = () => {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         </div>
 
-        <div className="container max-w-[1400px] mx-auto px-8 relative z-10 text-center">
+        <div className="container max-w-[1400px] mx-auto px-5 sm:px-8 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fc8018]/15 border border-[#fc8018]/30 mb-6">
+            <div className="inline-flex max-w-full items-center gap-2 px-4 py-2 rounded-full bg-[#fc8018]/15 border border-[#fc8018]/30 mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#fc8018] animate-pulse" />
-              <span className="text-[#fc8018] text-sm md:text-base font-bold uppercase tracking-[0.25em]">
+              <span className="text-[#fc8018] text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.18em] sm:tracking-[0.25em]">
                 {t('careers_hiring_badge')}
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-[1.1]">
+            <h1 className="text-[34px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-[1.08] sm:leading-[1.1]">
               {t('careers_hero_title1')}<br />
               <span className="text-[#fc8018] relative inline-block">
                 {t('careers_hero_title2')}
@@ -157,7 +157,7 @@ export const CareersClient: FC = () => {
               </span>
             </h1>
 
-            <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto font-medium leading-relaxed mb-10">
+            <p className="text-white/60 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-medium leading-relaxed mb-8 md:mb-10">
               {t('careers_hero_desc')}
             </p>
           </motion.div>
@@ -183,10 +183,10 @@ export const CareersClient: FC = () => {
       </section>
 
       {/* Tighter Filter & Job List */}
-      <section className="py-12 px-8">
+      <section className="py-8 md:py-12 px-5 sm:px-8">
         <div className="container max-w-[1400px] mx-auto">
           {/* Formal Corporate Filters - Tighter */}
-          <div className="mb-12 pb-8 border-b border-gray-100">
+          <div className="mb-8 md:mb-12 pb-6 md:pb-8 border-b border-gray-100">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Category Filter */}
               <div className="space-y-3">
@@ -263,19 +263,19 @@ export const CareersClient: FC = () => {
                       exit={{ opacity: 0, scale: 0.98 }}
                       transition={{ duration: 0.4 }}
                     >
-                      <div className="group bg-white p-10 md:p-12 rounded-[3rem] border border-gray-100 hover:border-primary/5 hover:shadow-[0_40px_80px_rgba(0,0,0,0.04)] transition-all duration-700 flex flex-col relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-2 h-full bg-primary/5 group-hover:bg-primary transition-all duration-700" />
+                      <div className="group bg-white p-5 sm:p-6 md:p-12 rounded-2xl md:rounded-[3rem] border border-gray-100 hover:border-primary/5 hover:shadow-[0_40px_80px_rgba(0,0,0,0.04)] transition-all duration-700 flex flex-col relative overflow-hidden">
+                        <div className="absolute top-0 left-0 w-1.5 md:w-2 h-full bg-primary/5 group-hover:bg-primary transition-all duration-700" />
                         
                         <div className="flex-1">
-                          <div className="flex flex-wrap items-center gap-6 mb-6 pr-44 md:pr-48">
+                          <div className="flex flex-wrap items-center gap-2.5 md:gap-6 mb-5 md:mb-6 md:pr-48">
                             {job.employmentType && (
-                              <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#fc8018] bg-[#fc8018]/5 px-4 py-1.5 rounded-full">
+                              <span className="flex items-center gap-1.5 md:gap-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.14em] md:tracking-[0.2em] text-[#fc8018] bg-[#fc8018]/5 px-3 md:px-4 py-1.5 rounded-full">
                                 <Clock className="h-3 w-3" />
                                 {job.employmentType}
                               </span>
                             )}
                             {job.location && (
-                              <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-primary/40">
+                              <span className="flex items-center gap-1.5 md:gap-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.14em] md:tracking-[0.2em] text-primary/40">
                                 <MapPin className="h-3 w-3" />
                                 {job.location}
                               </span>
@@ -288,43 +288,43 @@ export const CareersClient: FC = () => {
                             )}
                           </div>
                           
-                          <div className="flex items-center gap-4 mb-4 pr-44 md:pr-48">
-                            <div className="h-10 w-10 bg-primary/5 rounded-xl flex items-center justify-center text-[#fc8018] group-hover:bg-[#fc8018] group-hover:text-white transition-all duration-500">
+                          <div className="flex items-start gap-3 md:gap-4 mb-4 md:pr-48">
+                            <div className="h-10 w-10 shrink-0 bg-primary/5 rounded-xl flex items-center justify-center text-[#fc8018] group-hover:bg-[#fc8018] group-hover:text-white transition-all duration-500">
                               {getCategoryIcon(job.category)}
                             </div>
-                            <h3 className="text-3xl font-semibold text-primary group-hover:translate-x-2 transition-transform duration-500">{job.title}</h3>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary leading-tight md:group-hover:translate-x-2 transition-transform duration-500">{job.title}</h3>
                           </div>
                           
-                          <p className="text-primary/60 font-medium max-w-3xl leading-relaxed text-lg mb-8 whitespace-pre-line">
+                          <p className="text-primary/60 font-medium max-w-3xl leading-relaxed text-sm sm:text-base md:text-lg mb-5 md:mb-8 whitespace-pre-line">
                             {displayDesc}
                             {shouldTruncate && (
                               <button
                                 onClick={() => setExpandedJobs(prev => ({ ...prev, [job.sourceJobId]: !isExpanded }))}
-                                className="text-[#fc8018] hover:text-[#fc8018]/80 font-bold ml-2 inline-flex items-center gap-1 transition-colors text-base"
+                                className="text-[#fc8018] hover:text-[#fc8018]/80 font-bold ml-2 inline-flex items-center gap-1 transition-colors text-sm md:text-base"
                               >
                                 {isExpanded ? t('careers_see_less') : t('careers_see_more')}
                               </button>
                             )}
                           </p>
 
-                          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-gray-50">
-                            <div className="flex items-center gap-2.5 text-[13px] font-semibold text-primary/70 bg-gray-50/50 px-4 py-2 rounded-xl">
+                          <div className="grid grid-cols-1 sm:grid-cols-3 md:flex md:flex-wrap items-stretch md:items-center gap-2.5 md:gap-x-8 md:gap-y-4 pt-5 md:pt-6 border-t border-gray-50">
+                            <div className="flex items-center gap-2.5 text-[12px] md:text-[13px] font-semibold text-primary/70 bg-gray-50/70 px-3 md:px-4 py-2 rounded-xl">
                               <Wallet className="h-4 w-4 text-[#fc8018]" />
                               {job.salary || t('careers_salary_undisclosed')}
                             </div>
-                            <div className="flex items-center gap-2.5 text-[13px] font-semibold text-primary/70 bg-gray-50/50 px-4 py-2 rounded-xl">
+                            <div className="flex items-center gap-2.5 text-[12px] md:text-[13px] font-semibold text-primary/70 bg-gray-50/70 px-3 md:px-4 py-2 rounded-xl">
                               <Zap className="h-4 w-4 text-[#fc8018]" />
                               {job.experience || t('careers_experience_not_specified')}
                             </div>
-                            <div className="flex items-center gap-2.5 text-[13px] font-semibold text-primary/70 bg-gray-50/50 px-4 py-2 rounded-xl">
+                            <div className="flex items-center gap-2.5 text-[12px] md:text-[13px] font-semibold text-primary/70 bg-gray-50/70 px-3 md:px-4 py-2 rounded-xl">
                               <Shield className="h-4 w-4 text-[#fc8018]" />
                               {job.education || t('careers_education_not_specified')}
                             </div>
                           </div>
                         </div>
                         
-                        <Button className="absolute top-10 right-10 md:top-12 md:right-12 bg-primary hover:bg-primary/90 text-white rounded-2xl h-12 md:h-14 px-6 md:px-8 text-sm md:text-base font-bold shadow-xl shadow-primary/10 group/btn transition-all duration-500 hover:scale-105 active:scale-95 p-0">
-                          <a href={job.applyUrl} target="_blank" rel="noopener noreferrer" className="flex items-center w-full h-full px-6 md:px-8">
+                        <Button className="mt-5 md:mt-0 md:absolute md:top-12 md:right-12 w-full md:w-auto bg-primary hover:bg-primary/90 text-white rounded-xl md:rounded-2xl h-12 md:h-14 px-6 md:px-8 text-sm md:text-base font-bold shadow-xl shadow-primary/10 group/btn transition-all duration-500 md:hover:scale-105 active:scale-95 p-0">
+                          <a href={job.applyUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full px-6 md:px-8">
                             {t('careers_apply_btn')}
                             <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover/btn:translate-x-2 transition-transform duration-500" />
                           </a>
