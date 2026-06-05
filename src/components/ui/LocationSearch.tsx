@@ -2,15 +2,30 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Search, X, ExternalLink } from 'lucide-react';
+import { useLanguage } from '@/lib/LanguageContext';
+
+type Location = {
+  name: string;
+  labelKey?: string;
+  url: string;
+  address: string;
+};
+
+type LocationGroup = {
+  titleKey: string;
+  matches: (location: Location) => boolean;
+};
 
 const locations = [
   { 
     name: 'Head Office', 
+    labelKey: 'location_head_office',
     url: 'https://maps.app.goo.gl/wk5pYKgyEe2V6s2R6', 
     address: 'Raffles Hills Blok T.11 No. 18, Leuwinanggung, Tapos, Kota Depok, Jawa Barat 16454' 
   },
   { 
     name: 'IKM Laundry', 
+    labelKey: 'location_ikm',
     url: 'https://maps.app.goo.gl/CuuJhPbH3D2bMhdm9', 
     address: 'Kec. Gunung Putri, Kabupaten Bogor, Jawa Barat 16961' 
   },
@@ -41,14 +56,38 @@ const locations = [
   },
 ];
 
+const locationGroups: LocationGroup[] = [
+  {
+    titleKey: 'location_group_head_office',
+    matches: (location: Location) => location.name === 'Head Office',
+  },
+  {
+    titleKey: 'location_group_healthcare',
+    matches: (location: Location) => location.name === 'IKM Laundry',
+  },
+  {
+    titleKey: 'location_group_commercial',
+    matches: (location: Location) => location.name.startsWith('Waschen Laundry'),
+  },
+];
+
 export const LocationSearch = () => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredLocations = locations.filter(loc => 
-    loc.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    loc.address.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredLocations = locations.filter((loc) =>
+    `${loc.name} ${loc.labelKey ? t(loc.labelKey) : ''} ${loc.address}`
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase())
   );
+
+  const groupedLocations = locationGroups
+    .map((group) => ({
+      ...group,
+      locations: filteredLocations.filter(group.matches),
+    }))
+    .filter((group) => group.locations.length > 0);
 
   // Close on escape key
   useEffect(() => {
@@ -99,7 +138,7 @@ export const LocationSearch = () => {
         className="fixed right-0 top-1/2 -translate-y-1/2 z-[100] bg-primary text-white py-6 px-4 rounded-l-2xl shadow-2xl flex flex-col items-center gap-3 border-y border-l border-white/20 backdrop-blur-lg transition-colors hover:bg-primary/90 group"
       >
         <MapPin className="h-6 w-6 group-hover:animate-bounce" />
-        <span className="[writing-mode:vertical-lr] font-bold uppercase tracking-[0.2em] text-xs md:text-sm">Find Us</span>
+        <span className="[writing-mode:vertical-lr] font-bold uppercase tracking-[0.2em] text-xs md:text-sm">{t('location_find_us')}</span>
       </motion.button>
 
       <AnimatePresence>
@@ -125,8 +164,8 @@ export const LocationSearch = () => {
               {/* Header */}
               <div className="p-6 border-b border-gray-100 flex items-center justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold text-primary">Our Operations & Facilities</h2>
-                  <p className="text-xs text-gray-400 mt-1">Select a unit to view on Google Maps</p>
+                  <h2 className="text-xl font-semibold text-primary">{t('location_title')}</h2>
+                  <p className="text-xs text-gray-400 mt-1">{t('location_subtitle')}</p>
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}
@@ -142,7 +181,7 @@ export const LocationSearch = () => {
                   <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <input
                     type="text"
-                    placeholder="Search by area or address..."
+                    placeholder={t('location_search_placeholder')}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full pl-12 pr-4 py-3 bg-gray-50 border border-transparent rounded-2xl focus:bg-white focus:border-primary/20 focus:outline-none transition-all text-sm text-gray-700 font-medium placeholder-gray-400"
@@ -152,39 +191,60 @@ export const LocationSearch = () => {
 
               {/* List */}
               <div className="flex-1 overflow-y-auto px-6 py-2 custom-scrollbar">
-                <div className="space-y-3">
-                  {filteredLocations.map((loc, i) => (
-                    <motion.a
-                      key={i}
-                      href={loc.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.05 }}
-                      className="group block p-6 bg-gray-50 hover:bg-primary rounded-3xl transition-all duration-300 border border-transparent hover:border-primary/10"
-                    >
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <h3 className="font-semibold text-primary group-hover:text-white transition-colors mb-2 text-base leading-tight">
-                            {loc.name}
-                          </h3>
-                          <p className="text-xs text-gray-400 group-hover:text-white/60 transition-colors leading-relaxed">
-                            {loc.address}
-                          </p>
-                        </div>
-                        <div className="h-8 w-8 bg-white group-hover:bg-white/20 rounded-full flex items-center justify-center text-primary group-hover:text-white transition-all shadow-sm">
-                          <ExternalLink className="h-4 w-4" />
-                        </div>
+                <div className="space-y-6">
+                  {groupedLocations.map((group, groupIndex) => (
+                    <section key={group.titleKey} className="space-y-3">
+                      <div className="pt-4">
+                        <h3 className="text-sm font-semibold text-primary leading-snug">
+                          {t(group.titleKey)}
+                        </h3>
                       </div>
-                    </motion.a>
+
+                      <div className="space-y-3">
+                        {group.locations.map((loc, i) => (
+                          <motion.a
+                            key={loc.name}
+                            href={loc.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: (groupIndex + i) * 0.05 }}
+                            className="group block p-6 bg-gray-50 hover:bg-primary rounded-3xl transition-all duration-300 border border-transparent hover:border-primary/10"
+                          >
+                            <div className="flex items-start justify-between gap-4">
+                              <div className="flex-1">
+                                <h4 className="font-semibold text-primary group-hover:text-white transition-colors mb-2 text-base leading-tight">
+                                  {loc.labelKey ? t(loc.labelKey) : loc.name}
+                                </h4>
+                                <p className="text-xs text-gray-400 group-hover:text-white/60 transition-colors leading-relaxed">
+                                  {loc.address}
+                                </p>
+                              </div>
+                              <div className="h-8 w-8 shrink-0 bg-white group-hover:bg-white/20 rounded-full flex items-center justify-center text-primary group-hover:text-white transition-all shadow-sm">
+                                <ExternalLink className="h-4 w-4" />
+                              </div>
+                            </div>
+                          </motion.a>
+                        ))}
+                      </div>
+                    </section>
                   ))}
+
                   {filteredLocations.length === 0 && (
                     <div className="text-center py-20">
                       <div className="h-16 w-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Search className="h-6 w-6 text-gray-300" />
                       </div>
-                      <p className="text-gray-400 font-medium">No locations found</p>
+                      <p className="text-gray-400 font-medium">{t('location_no_results')}</p>
+                    </div>
+                  )}
+                  {filteredLocations.length > 0 && groupedLocations.length === 0 && (
+                    <div className="text-center py-20">
+                      <div className="h-16 w-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Search className="h-6 w-6 text-gray-300" />
+                      </div>
+                      <p className="text-gray-400 font-medium">{t('location_no_grouped_results')}</p>
                     </div>
                   )}
                 </div>

@@ -25,12 +25,14 @@ export const Workflow: FC = () => {
           {/* Company profile video - clean, no overlay */}
           <video
             className="w-full h-full object-cover"
+            src="/video/videocompro-baru.mp4"
             autoPlay
             muted
             loop
             playsInline
+            preload="metadata"
           >
-            <source src="/video/videocompro.mp4" type="video/mp4" />
+            <source src="/video/videocompro-baru.mp4" type="video/mp4" />
           </video>
         </div>
       </ContainerScroll>

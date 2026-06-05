@@ -33,11 +33,11 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[800px] lg:h-[850px] flex items-center bg-[#49122E] overflow-hidden font-poppins z-30">
+    <section id="home" className="relative min-h-[860px] lg:h-[850px] flex items-center bg-[#49122E] overflow-hidden font-poppins z-30">
       <div className="absolute inset-0 bg-gradient-to-br from-[#49122E] via-[#3D0F27] to-[#2D0B1D] z-0" />
 
       {/* Video Area */}
-      <div className="absolute top-0 right-0 w-full lg:w-[55%] h-full z-0">
+      <div className="absolute top-0 right-0 hidden lg:block lg:w-[55%] h-full z-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentVideo}
@@ -63,15 +63,15 @@ export const Hero = () => {
       </div>
 
       {/* Core Page Container holding both content and aligned services-lagi image */}
-      <div className="container max-w-[1400px] mx-auto px-8 relative z-10 h-full flex items-center">
+      <div className="container max-w-[1400px] mx-auto px-5 sm:px-8 relative z-10 h-full flex items-center">
         
         {/* Left Column: Typography & CTAs */}
-        <div className="w-full lg:w-[55%] flex flex-col items-start pt-32 pb-48">
+        <div className="w-full lg:w-[55%] flex flex-col items-start pt-28 sm:pt-32 pb-72 sm:pb-80 lg:pb-48">
           {/* Eyebrow - Badge Style Dynamic */}
-          <div className="mb-10">
-            <div className="inline-flex items-center px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg text-white text-xs md:text-sm font-semibold uppercase tracking-[0.25em]">
+          <div className="mb-8 sm:mb-10 max-w-full">
+            <div className="inline-flex max-w-full flex-wrap items-center gap-y-1 px-4 sm:px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl sm:rounded-full border border-white/20 shadow-lg text-white text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.12em] sm:tracking-[0.25em]">
               <span className="whitespace-nowrap opacity-80">{t('hero_badge_deliver')}</span>
-              <div className="relative inline-flex items-center justify-center min-w-[155px] md:min-w-[195px] h-[1.2em] mx-1">
+              <div className="inline-flex items-center justify-center min-w-[128px] sm:min-w-[155px] md:min-w-[195px] h-[1.2em] mx-1">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={words[wordIndex]}
@@ -79,7 +79,7 @@ export const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -5 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute whitespace-nowrap text-[#fc8018]"
+                    className="inline-block whitespace-nowrap text-[#fc8018]"
                   >
                     {t(`word_${words[wordIndex]}`)}
                   </motion.span>
@@ -89,18 +89,18 @@ export const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-white text-4xl md:text-5xl lg:text-[52px] font-bold leading-[1.15] tracking-tight mb-10 max-w-[900px]">
+          <h1 className="text-white text-[34px] sm:text-4xl md:text-5xl lg:text-[52px] font-bold leading-[1.12] lg:leading-[1.15] tracking-tight mb-8 sm:mb-10 max-w-[900px]">
             {t('hero_title_line1')} <br />
             {t('hero_title_line2')} <br />
             {t('hero_title_line3')}
           </h1>
 
-          <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-[600px] mb-14">
+          <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed max-w-[600px] mb-10 sm:mb-14">
             {t('hero_desc')}
           </p>
 
           <Button
-            className="bg-[#fc8018] text-white hover:bg-[#fc8018]/90 font-semibold px-10 py-7 rounded-xl text-base shadow-xl group transition-all duration-300"
+            className="bg-[#fc8018] text-white hover:bg-[#fc8018]/90 font-semibold px-7 sm:px-10 py-6 sm:py-7 rounded-xl text-sm sm:text-base shadow-xl group transition-all duration-300"
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
           >
             {t('hero_cta')}
@@ -109,18 +109,18 @@ export const Hero = () => {
         </div>
 
         {/* Right Column: Services Photo anchored to the exact same 1400px right boundary */}
-        <div className="absolute bottom-0 right-8 w-[40%] xl:w-[45%] max-w-[540px] xl:max-w-[620px] z-20 hidden lg:flex items-end justify-end pointer-events-none">
+        <div className="absolute bottom-[-125px] sm:bottom-[-95px] right-1/2 translate-x-1/2 w-[92%] max-w-[420px] z-20 flex items-end justify-center pointer-events-none lg:bottom-0 lg:right-8 lg:translate-x-0 lg:w-[40%] xl:w-[45%] lg:max-w-[540px] xl:max-w-[620px] lg:justify-end">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="w-full"
           >
             <Image 
               src={imgServicesLagi}
               alt="Services Highlight"
               priority
-              className="w-full h-auto object-contain block translate-y-[20px]"
+              className="w-full h-auto object-contain block translate-y-[18px] lg:translate-y-[20px]"
             />
           </motion.div>
         </div>

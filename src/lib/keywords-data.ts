@@ -25,18 +25,18 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Premium Raffles Hills Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Professional and premium laundry services in Raffles Hills especially in Jabodetabek, Cibubur. Certified hygiene, eco-friendly detergents, and express services available.',
-      id: 'Layanan laundry premium dan profesional di Raffles Hills khususnya di Jabodetabek, Cibubur. Standar higienis bersertifikasi, detergen ramah lingkungan, dan tersedia layanan ekspres.'
+      en: 'Professional and premium laundry services in Raffles Hills especially in Cibubur, Cibubur. Certified hygiene, eco-friendly detergents, and express services available.',
+      id: 'Layanan laundry premium dan profesional di Raffles Hills khususnya di Cibubur, Cibubur. Standar higienis bersertifikasi, detergen ramah lingkungan, dan tersedia layanan ekspres.'
     },
     h1: {
-      en: 'Premium Laundry Services in Raffles Hills especially in Jabodetabek Cibubur',
-      id: 'Jasa Laundry Premium di Raffles Hills khususnya di Jabodetabek Cibubur'
+      en: 'Premium Laundry Services in Raffles Hills especially in Cibubur Cibubur',
+      id: 'Jasa Laundry Premium di Raffles Hills khususnya di Cibubur Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
     locationName: { en: 'Raffles Hills, Cibubur (Jabodetabek)', id: 'Raffles Hills, Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT Waschen Alora Indonesia provides premium laundry and dry cleaning services for residents of Raffles Hills especially in Jabodetabek, Cibubur. We utilize state-of-the-art washing technology and eco-friendly products to clean your garments with care and precision.',
+      en: 'PT Waschen Alora Indonesia provides premium laundry and dry cleaning services for residents of Raffles Hills especially in Cibubur, Cibubur. We utilize state-of-the-art washing technology and eco-friendly products to clean your garments with care and precision.',
       id: 'PT Waschen Alora Indonesia menyediakan jasa laundry premium dan dry cleaning untuk warga perumahan Raffles Hills, Cibubur. Kami menggunakan teknologi pencucian termodern dan produk ramah lingkungan untuk membersihkan pakaian Anda secara cermat dan bersih.'
     },
     features: [
@@ -55,8 +55,8 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'Do you offer pickup and delivery in Raffles Hills especially in Jabodetabek?', id: 'Apakah tersedia layanan antar jemput di Raffles Hills khususnya di Jabodetabek?' },
-        a: { en: 'Yes, we provide convenient laundry pickup and delivery services for all clusters in Raffles Hills especially in Jabodetabek, Cibubur.', id: 'Ya, kami menyediakan layanan antar jemput laundry yang praktis untuk seluruh klaster di Raffles Hills khususnya di Jabodetabek, Cibubur.' }
+        q: { en: 'Do you offer pickup and delivery in Raffles Hills especially in Cibubur?', id: 'Apakah tersedia layanan antar jemput di Raffles Hills khususnya di Cibubur?' },
+        a: { en: 'Yes, we provide convenient laundry pickup and delivery services for all clusters in Raffles Hills especially in Cibubur, Cibubur.', id: 'Ya, kami menyediakan layanan antar jemput laundry yang praktis untuk seluruh klaster di Raffles Hills khususnya di Cibubur, Cibubur.' }
       },
       {
         q: { en: 'What is the turnaround time for express laundry?', id: 'Berapa lama waktu pengerjaan untuk laundry ekspres?' },
@@ -71,12 +71,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Profesional Citra Grand Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Professional laundry and dry cleaning services for Citra Grand especially in Jabodetabek Cibubur. We offer premium care for clothing, carpets, bedcovers, and more.',
-      id: 'Layanan laundry profesional dan dry cleaning untuk Citra Grand khususnya di Jabodetabek Cibubur. Kami menawarkan perawatan premium untuk pakaian, karpet, bedcover, dan lainnya.'
+      en: 'Professional laundry and dry cleaning services for Citra Grand especially in Cibubur Cibubur. We offer premium care for clothing, carpets, bedcovers, and more.',
+      id: 'Layanan laundry profesional dan dry cleaning untuk Citra Grand Cibubur. Kami menawarkan perawatan premium untuk pakaian, karpet, bedcover, dan lainnya.'
     },
     h1: {
-      en: 'Professional Laundry Services in Citra Grand especially in Jabodetabek Cibubur',
-      id: 'Jasa Laundry Profesional di Citra Grand khususnya di Jabodetabek Cibubur'
+      en: 'Professional Laundry Services in Citra Grand especially in Cibubur Cibubur',
+      id: 'Jasa Laundry Profesional di Citra Grand khususnya di Cibubur Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Professional Laundry', id: 'Laundry Profesional' },
@@ -97,7 +97,7 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'How can I request laundry pickup in Citra Grand especially in Jabodetabek?', id: 'Bagaimana cara mengajukan penjemputan laundry di Citra Grand khususnya di Jabodetabek?' },
+        q: { en: 'How can I request laundry pickup in Citra Grand especially in Cibubur?', id: 'Bagaimana cara mengajukan penjemputan laundry di Citra Grand khususnya di Cibubur?' },
         a: { en: 'You can contact us via our WhatsApp hotline at 085122333371 to schedule a convenient pickup time.', id: 'Anda dapat menghubungi hotline WhatsApp kami di 085122333371 untuk menjadwalkan waktu penjemputan.' }
       }
     ]
@@ -109,18 +109,18 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Cluster Canadian Kota Wisata Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Premium laundry services for the Canadian Cluster in Kota Wisata especially in Jabodetabek, Cibubur. Trusted cleaning for all types of garments with pickup options.',
-      id: 'Layanan laundry premium untuk Cluster Canadian di Kota Wisata khususnya di Jabodetabek, Cibubur. Pembersihan terpercaya untuk segala jenis pakaian dengan opsi antar jemput.'
+      en: 'Premium laundry services for the Canadian Cluster in Kota Wisata especially in Cibubur, Cibubur. Trusted cleaning for all types of garments with pickup options.',
+      id: 'Layanan laundry premium untuk Cluster Canadian di Kota Wisata khususnya di Cibubur, Cibubur. Pembersihan terpercaya untuk segala jenis pakaian dengan opsi antar jemput.'
     },
     h1: {
-      en: 'Premium Laundry Services in Canadian especially in Jabodetabek Cluster Cibubur',
+      en: 'Premium Laundry Services in Canadian especially in Cibubur Cluster Cibubur',
       id: 'Jasa Laundry Premium di Cluster Canadian Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
     locationName: { en: 'Canadian Cluster, Kota Wisata, Cibubur (Jabodetabek)', id: 'Cluster Canadian, Kota Wisata, Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Waschen Alora provides custom laundry care for Canadian especially in Jabodetabek Cluster residents within Kota Wisata Cibubur. We ensure absolute hygiene and cleanliness with our modern washing processes and quality checks.',
+      en: 'Waschen Alora provides custom laundry care for Canadian especially in Cibubur Cluster residents within Kota Wisata Cibubur. We ensure absolute hygiene and cleanliness with our modern washing processes and quality checks.',
       id: 'Waschen Alora menyediakan perawatan laundry khusus untuk penghuni Cluster Canadian di dalam Kota Wisata Cibubur. Kami menjamin kebersihan dan higienitas mutlak dengan proses cuci modern dan kontrol kualitas tinggi.'
     },
     features: [
@@ -147,19 +147,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Sentral Eropa Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Expert laundry and dry cleaning services for Sentral Eropa especially in Jabodetabek Kota Wisata, Cibubur. Certified sanitation and high-efficiency machines.',
-      id: 'Layanan laundry dan dry cleaning ahli untuk Sentral Eropa khususnya di Jabodetabek Kota Wisata, Cibubur. Sanitasi bersertifikat dan mesin berefisiensi tinggi.'
+      en: 'Expert laundry and dry cleaning services for Sentral Eropa especially in Cibubur Kota Wisata, Cibubur. Certified sanitation and high-efficiency machines.',
+      id: 'Layanan laundry dan dry cleaning ahli untuk Sentral Eropa Kota Wisata, Cibubur. Sanitasi bersertifikat dan mesin berefisiensi tinggi.'
     },
     h1: {
-      en: 'Expert Laundry Services in Sentral Eropa especially in Jabodetabek Cibubur',
-      id: 'Layanan Laundry Ahli di Sentral Eropa khususnya di Jabodetabek Cibubur'
+      en: 'Expert Laundry Services in Sentral Eropa especially in Cibubur Cibubur',
+      id: 'Layanan Laundry Ahli di Sentral Eropa khususnya di Cibubur Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Expert Laundry', id: 'Laundry Ahli' },
     locationName: { en: 'Sentral Eropa, Kota Wisata, Cibubur (Jabodetabek)', id: 'Sentral Eropa, Kota Wisata, Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Located close to the business district of Sentral Eropa in Kota Wisata especially in Jabodetabek Cibubur, Waschen Alora Indonesia caters to both corporate entities and residential clients, delivering fast and immaculate results.',
-      id: 'Berada dekat dengan area komersial Sentral Eropa di Kota Wisata khususnya di Jabodetabek Cibubur, Waschen Alora Indonesia melayani entitas korporat maupun klien hunian dengan hasil yang cepat dan bersih sempurna.'
+      en: 'Located close to the business district of Sentral Eropa in Kota Wisata especially in Cibubur Cibubur, Waschen Alora Indonesia caters to both corporate entities and residential clients, delivering fast and immaculate results.',
+      id: 'Berada dekat dengan area komersial Sentral Eropa di Kota Wisata khususnya di Cibubur Cibubur, Waschen Alora Indonesia melayani entitas korporat maupun klien hunian dengan hasil yang cepat dan bersih sempurna.'
     },
     features: [
       {
@@ -181,12 +181,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Premium Legenda Wisata Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Premium laundry services in Legenda Wisata especially in Jabodetabek Cibubur. Special care for garments, bags, shoes, and bedding accessories with pickup & delivery.',
-      id: 'Layanan laundry premium di Legenda Wisata khususnya di Jabodetabek Cibubur. Perawatan khusus pakaian, tas, sepatu, dan bedcover dengan sistem antar jemput.'
+      en: 'Premium laundry services in Legenda Wisata especially in Cibubur Cibubur. Special care for garments, bags, shoes, and bedding accessories with pickup & delivery.',
+      id: 'Layanan laundry premium di Legenda Wisata khususnya di Cibubur Cibubur. Perawatan khusus pakaian, tas, sepatu, dan bedcover dengan sistem antar jemput.'
     },
     h1: {
-      en: 'Premium Laundry Services in Legenda Wisata especially in Jabodetabek Cibubur',
-      id: 'Jasa Laundry Premium di Legenda Wisata khususnya di Jabodetabek Cibubur'
+      en: 'Premium Laundry Services in Legenda Wisata especially in Cibubur Cibubur',
+      id: 'Jasa Laundry Premium di Legenda Wisata khususnya di Cibubur Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
@@ -215,19 +215,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Rumah Sakit & Medis Cibubur | PT IKM'
     },
     description: {
-      en: 'Certified hospital and healthcare laundry services in Cibubur especially in Jabodetabek. Dedicated linen management, sanitization protocols, and reliable logistics.',
-      id: 'Layanan laundry rumah sakit dan kesehatan bersertifikat di Cibubur khususnya di Jabodetabek. Manajemen linen khusus, protokol sanitasi ketat, dan logistik terpercaya.'
+      en: 'Certified hospital and healthcare laundry services in Cibubur. Dedicated linen management, sanitization protocols, and reliable logistics.',
+      id: 'Layanan laundry rumah sakit dan kesehatan bersertifikat di Cibubur. Manajemen linen khusus, protokol sanitasi ketat, dan logistik terpercaya.'
     },
     h1: {
-      en: 'Certified Hospital Laundry & Linen Management in Cibubur especially in Jabodetabek',
-      id: 'Layanan Laundry & Manajemen Linen Rumah Sakit di Cibubur khususnya di Jabodetabek'
+      en: 'Certified Hospital Laundry & Linen Management in Cibubur',
+      id: 'Layanan Laundry & Manajemen Linen Rumah Sakit di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry', id: 'Laundry Rumah Sakit' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM (a unit of PT Waschen Alora Indonesia) is a specialized B2B provider of healthcare laundry and linen management in Cibubur especially in Jabodetabek. We conform to tight disinfection protocols and medical standards, ensuring zero cross-contamination.',
-      id: 'PT IKM (unit dari PT Waschen Alora Indonesia) adalah penyedia khusus B2B untuk laundry layanan kesehatan dan manajemen linen di Cibubur khususnya di Jabodetabek. Kami mematuhi protokol disinfeksi ketat dan standar medis untuk mencegah kontaminasi silang.'
+      en: 'PT IKM (a unit of PT Waschen Alora Indonesia) is a specialized B2B provider of healthcare laundry and linen management in Cibubur. We conform to tight disinfection protocols and medical standards, ensuring zero cross-contamination.',
+      id: 'PT IKM (unit dari PT Waschen Alora Indonesia) adalah penyedia khusus B2B untuk laundry layanan kesehatan dan manajemen linen di Cibubur. Kami mematuhi protokol disinfeksi ketat dan standar medis untuk mencegah kontaminasi silang.'
     },
     features: [
       {
@@ -253,19 +253,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Laundry Rumah Sakit & Linen Cibubur | PT IKM'
     },
     description: {
-      en: 'Professional medical laundry services and linen rental for clinics, hospitals, and medical centers in Cibubur especially in Jabodetabek. Zero contamination guarantee.',
-      id: 'Jasa laundry medis profesional dan penyewaan linen untuk klinik, rumah sakit, dan pusat kesehatan di Cibubur khususnya di Jabodetabek. Jaminan higienis tanpa kontaminasi.'
+      en: 'Professional medical laundry services and linen rental for clinics, hospitals, and medical centers in Cibubur. Zero contamination guarantee.',
+      id: 'Jasa laundry medis profesional dan penyewaan linen untuk klinik, rumah sakit, dan pusat kesehatan di Cibubur. Jaminan higienis tanpa kontaminasi.'
     },
     h1: {
-      en: 'Healthcare Laundry & Linen Rental Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Cibubur khususnya di Jabodetabek'
+      en: 'Healthcare Laundry & Linen Rental Services in Cibubur',
+      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Healthcare Laundry', id: 'Laundry Rumah Sakit' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM delivers professional laundry services and premium linen rental (sheets, pillowcases, doctor gowns, patient uniforms) for clinics and hospitals in Cibubur especially in Jabodetabek. We ensure all materials are sterilized and clean.',
-      id: 'PT IKM menghadirkan jasa laundry profesional dan persewaan linen premium (seprei, sarung bantal, jas dokter, baju pasien) untuk klinik dan rumah sakit di Cibubur khususnya di Jabodetabek. Kami memastikan seluruh material steril dan bersih.'
+      en: 'PT IKM delivers professional laundry services and premium linen rental (sheets, pillowcases, doctor gowns, patient uniforms) for clinics and hospitals in Cibubur. We ensure all materials are sterilized and clean.',
+      id: 'PT IKM menghadirkan jasa laundry profesional dan persewaan linen premium (seprei, sarung bantal, jas dokter, baju pasien) untuk klinik dan rumah sakit di Cibubur. Kami memastikan seluruh material steril dan bersih.'
     },
     features: [
       {
@@ -287,19 +287,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Laundry Hotel & Perhotelan Cibubur | PT IKM'
     },
     description: {
-      en: 'Premium hospitality laundry services for hotels, guest houses, and resorts in Cibubur especially in Jabodetabek. Excellent linen care, towels, and uniforms.',
-      id: 'Jasa laundry perhotelan premium untuk hotel, guest house, dan resort di Cibubur khususnya di Jabodetabek. Perawatan terbaik untuk linen, handuk, dan seragam.'
+      en: 'Premium hospitality laundry services for hotels, guest houses, and resorts in Cibubur. Excellent linen care, towels, and uniforms.',
+      id: 'Jasa laundry perhotelan premium untuk hotel, guest house, dan resort di Cibubur. Perawatan terbaik untuk linen, handuk, dan seragam.'
     },
     h1: {
-      en: 'Premium Hotel & Hospitality Laundry in Cibubur especially in Jabodetabek',
-      id: 'Jasa Laundry Hotel & Perhotelan Premium di Cibubur khususnya di Jabodetabek'
+      en: 'Premium Hotel & Hospitality Laundry in Cibubur',
+      id: 'Jasa Laundry Hotel & Perhotelan Premium di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hotel Laundry', id: 'Laundry Hotel' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM provides specialized commercial laundry services for the hospitality sector in Cibubur especially in Jabodetabek. We wash and iron hotel bedsheets, towels, curtains, and uniforms according to five-star hotel standards.',
-      id: 'PT IKM menyediakan jasa laundry komersial khusus untuk sektor perhotelan di Cibubur khususnya di Jabodetabek. Kami mencuci dan menyetrika seprei hotel, handuk, gorden, dan seragam sesuai standar kualitas hotel bintang lima.'
+      en: 'PT IKM provides specialized commercial laundry services for the hospitality sector in Cibubur. We wash and iron hotel bedsheets, towels, curtains, and uniforms according to five-star hotel standards.',
+      id: 'PT IKM menyediakan jasa laundry komersial khusus untuk sektor perhotelan di Cibubur. Kami mencuci dan menyetrika seprei hotel, handuk, gorden, dan seragam sesuai standar kualitas hotel bintang lima.'
     },
     features: [
       {
@@ -321,19 +321,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Korporat & Cuci Seragam Cibubur | PT IKM'
     },
     description: {
-      en: 'Commercial and corporate laundry services in Cibubur especially in Jabodetabek. We clean staff uniforms, workwear, and corporate textiles with professional standards.',
-      id: 'Layanan laundry komersial dan korporat di Cibubur khususnya di Jabodetabek. Kami mencuci seragam karyawan, pakaian kerja, dan tekstil korporat dengan standar profesional.'
+      en: 'Commercial and corporate laundry services in Cibubur. We clean staff uniforms, workwear, and corporate textiles with professional standards.',
+      id: 'Layanan laundry komersial dan korporat di Cibubur. Kami mencuci seragam karyawan, pakaian kerja, dan tekstil korporat dengan standar profesional.'
     },
     h1: {
-      en: 'Corporate Laundry & Uniform Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Laundry Korporat & Pencucian Seragam di Cibubur khususnya di Jabodetabek'
+      en: 'Corporate Laundry & Uniform Cleaning Services in Cibubur',
+      id: 'Jasa Laundry Korporat & Pencucian Seragam di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Corporate Laundry', id: 'Laundry Korporat' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM offers tailored laundry packages for corporations, factories, retail brands, and airlines in Cibubur especially in Jabodetabek. We manage bulk uniform washing with barcode tracking and customized packaging.',
-      id: 'PT IKM menawarkan paket laundry khusus untuk korporasi, pabrik, brand retail, dan maskapai penerbangan di Cibubur khususnya di Jabodetabek. Kami mengelola pencucian seragam massal dengan pelacakan barcode dan pengemasan khusus.'
+      en: 'PT IKM offers tailored laundry packages for corporations, factories, retail brands, and airlines in Cibubur. We manage bulk uniform washing with barcode tracking and customized packaging.',
+      id: 'PT IKM menawarkan paket laundry khusus untuk korporasi, pabrik, brand retail, dan maskapai penerbangan di Cibubur. Kami mengelola pencucian seragam massal dengan pelacakan barcode dan pengemasan khusus.'
     },
     features: [
       {
@@ -355,19 +355,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Profesional Cibubur | Cleanox'
     },
     description: {
-      en: 'Professional home and office cleaning service in Cibubur especially in Jabodetabek. Certified cleaners, premium disinfection, and thorough sanitation by Cleanox.',
-      id: 'Jasa cleaning service profesional untuk rumah dan kantor di Cibubur khususnya di Jabodetabek. Tenaga pembersih terlatih, disinfeksi premium, dan pembersihan menyeluruh oleh Cleanox.'
+      en: 'Professional home and office cleaning service in Cibubur. Certified cleaners, premium disinfection, and thorough sanitation by Cleanox.',
+      id: 'Jasa cleaning service profesional untuk rumah dan kantor di Cibubur. Tenaga pembersih terlatih, disinfeksi premium, dan pembersihan menyeluruh oleh Cleanox.'
     },
     h1: {
-      en: 'Professional Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Profesional di Cibubur khususnya di Jabodetabek'
+      en: 'Professional Cleaning Services in Cibubur',
+      id: 'Jasa Cleaning Service Profesional di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox (a unit of PT Waschen Alora Indonesia) is a premium cleaning service provider in Cibubur especially in Jabodetabek. We specialize in deep cleaning, post-construction cleaning, and general maintenance for residential and commercial units.',
-      id: 'Cleanox (unit dari PT Waschen Alora Indonesia) adalah penyedia jasa kebersihan premium di Cibubur khususnya di Jabodetabek. Kami berpengalaman dalam deep cleaning, pembersihan pasca-konstruksi, dan perawatan umum untuk perumahan dan komersial.'
+      en: 'Cleanox (a unit of PT Waschen Alora Indonesia) is a premium cleaning service provider in Cibubur. We specialize in deep cleaning, post-construction cleaning, and general maintenance for residential and commercial units.',
+      id: 'Cleanox (unit dari PT Waschen Alora Indonesia) adalah penyedia jasa kebersihan premium di Cibubur. Kami berpengalaman dalam deep cleaning, pembersihan pasca-konstruksi, dan perawatan umum untuk perumahan dan komersial.'
     },
     features: [
       {
@@ -393,19 +393,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Kantor Cibubur | Cleanox'
     },
     description: {
-      en: 'Maintain a pristine workspace with our office cleaning services in Cibubur especially in Jabodetabek. Daily, weekly, or custom cleaning schedules available.',
-      id: 'Jaga kantor Anda tetap bersih dengan jasa cleaning service kantor di Cibubur khususnya di Jabodetabek. Tersedia jadwal harian, mingguan, atau kustom.'
+      en: 'Maintain a pristine workspace with our office cleaning services in Cibubur. Daily, weekly, or custom cleaning schedules available.',
+      id: 'Jaga kantor Anda tetap bersih dengan jasa cleaning service kantor di Cibubur. Tersedia jadwal harian, mingguan, atau kustom.'
     },
     h1: {
-      en: 'Commercial Office Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Kantor di Cibubur khususnya di Jabodetabek'
+      en: 'Commercial Office Cleaning Services in Cibubur',
+      id: 'Jasa Cleaning Service Kantor di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Office Cleaning', id: 'Office Cleaning' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox offers specialized workplace cleaning solutions for companies in Cibubur especially in Jabodetabek. We clean workstations, conference rooms, carpets, windows, and toilets to create a healthy, productive workspace.',
-      id: 'Cleanox menawarkan solusi kebersihan ruang kerja untuk kantor-kantor di Cibubur khususnya di Jabodetabek. Kami membersihkan meja kerja, ruang rapat, karpet, jendela, dan toilet untuk menciptakan lingkungan kerja yang sehat dan produktif.'
+      en: 'Cleanox offers specialized workplace cleaning solutions for companies in Cibubur. We clean workstations, conference rooms, carpets, windows, and toilets to create a healthy, productive workspace.',
+      id: 'Cleanox menawarkan solusi kebersihan ruang kerja untuk kantor-kantor di Cibubur. Kami membersihkan meja kerja, ruang rapat, karpet, jendela, dan toilet untuk menciptakan lingkungan kerja yang sehat dan produktif.'
     },
     features: [
       {
@@ -427,19 +427,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Rumah Cibubur | Cleanox'
     },
     description: {
-      en: 'Trusted home cleaning service in Cibubur especially in Jabodetabek. We provide house cleaning, kitchen scrubbing, bathroom sanitizing, and window washing.',
-      id: 'Jasa cleaning service rumah terpercaya di Cibubur khususnya di Jabodetabek. Kami menyediakan pembersihan rumah, dapur, sanitasi kamar mandi, dan cuci jendela.'
+      en: 'Trusted home cleaning service in Cibubur. We provide house cleaning, kitchen scrubbing, bathroom sanitizing, and window washing.',
+      id: 'Jasa cleaning service rumah terpercaya di Cibubur. Kami menyediakan pembersihan rumah, dapur, sanitasi kamar mandi, dan cuci jendela.'
     },
     h1: {
-      en: 'Residential Home Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Rumah di Cibubur khususnya di Jabodetabek'
+      en: 'Residential Home Cleaning Services in Cibubur',
+      id: 'Jasa Cleaning Service Rumah di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Home Cleaning', id: 'Home Cleaning' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Keep your home clean and comfortable. Cleanox provides complete residential cleaning services in Cibubur especially in Jabodetabek, including deep disinfection for bedrooms, living rooms, kitchens, and patios.',
-      id: 'Jaga rumah tinggal Anda tetap bersih dan nyaman. Cleanox menyediakan jasa pembersihan rumah tinggal lengkap di Cibubur khususnya di Jabodetabek, termasuk disinfeksi mendalam untuk kamar tidur, ruang tamu, dapur, dan teras.'
+      en: 'Keep your home clean and comfortable. Cleanox provides complete residential cleaning services in Cibubur, including deep disinfection for bedrooms, living rooms, kitchens, and patios.',
+      id: 'Jaga rumah tinggal Anda tetap bersih dan nyaman. Cleanox menyediakan jasa pembersihan rumah tinggal lengkap di Cibubur, termasuk disinfeksi mendalam untuk kamar tidur, ruang tamu, dapur, dan teras.'
     },
     features: [
       {
@@ -461,19 +461,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cuci Karpet Profesional Cibubur | Cleanox'
     },
     description: {
-      en: 'Professional carpet cleaning service in Cibubur especially in Jabodetabek. Deep washing, dust mite removal, odor elimination, and sanitizing for homes and offices.',
-      id: 'Jasa cuci karpet profesional di Cibubur khususnya di Jabodetabek. Pencucian mendalam, pembasmian tungau debu, penghilang bau, dan sanitasi rumah serta kantor.'
+      en: 'Professional carpet cleaning service in Cibubur. Deep washing, dust mite removal, odor elimination, and sanitizing for homes and offices.',
+      id: 'Jasa cuci karpet profesional di Cibubur. Pencucian mendalam, pembasmian tungau debu, penghilang bau, dan sanitasi rumah serta kantor.'
     },
     h1: {
-      en: 'Professional Carpet Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cuci Karpet Profesional di Cibubur khususnya di Jabodetabek'
+      en: 'Professional Carpet Cleaning Services in Cibubur',
+      id: 'Jasa Cuci Karpet Profesional di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Carpet Cleaning', id: 'Cuci Karpet' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Dirty carpets harbor millions of germs and dust mites. Cleanox offers professional carpet washing in Cibubur especially in Jabodetabek for offices, mosques, and homes, using extraction machines to pull deep dirt out of the fibers.',
-      id: 'Karpet kotor menyimpan jutaan kuman dan tungau debu. Cleanox menawarkan pencucian karpet profesional di Cibubur khususnya di Jabodetabek untuk kantor, masjid, dan rumah, menggunakan mesin ekstraktor untuk menarik kotoran terdalam.'
+      en: 'Dirty carpets harbor millions of germs and dust mites. Cleanox offers professional carpet washing in Cibubur for offices, mosques, and homes, using extraction machines to pull deep dirt out of the fibers.',
+      id: 'Karpet kotor menyimpan jutaan kuman dan tungau debu. Cleanox menawarkan pencucian karpet profesional di Cibubur untuk kantor, masjid, dan rumah, menggunakan mesin ekstraktor untuk menarik kotoran terdalam.'
     },
     features: [
       {
@@ -495,19 +495,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cuci Sofa & Upholstery Cibubur | Cleanox'
     },
     description: {
-      en: 'Professional sofa and upholstery cleaning service in Cibubur especially in Jabodetabek. We clean fabric and leather sofas, removing stains, mites, and bad odors.',
-      id: 'Jasa cuci sofa dan upholstery profesional di Cibubur khususnya di Jabodetabek. Kami membersihkan sofa kain dan kulit, menghilangkan noda, tungau, dan bau tidak sedap.'
+      en: 'Professional sofa and upholstery cleaning service in Cibubur. We clean fabric and leather sofas, removing stains, mites, and bad odors.',
+      id: 'Jasa cuci sofa dan upholstery profesional di Cibubur. Kami membersihkan sofa kain dan kulit, menghilangkan noda, tungau, dan bau tidak sedap.'
     },
     h1: {
-      en: 'Sofa & Upholstery Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cuci Sofa & Upholstery di Cibubur khususnya di Jabodetabek'
+      en: 'Sofa & Upholstery Cleaning Services in Cibubur',
+      id: 'Jasa Cuci Sofa & Upholstery di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Sofa Cleaning', id: 'Cuci Sofa' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox restores the freshness of your living room furniture. Our sofa cleaning service in Cibubur especially in Jabodetabek uses specialized upholstery cleaning solutions and vacuum extractors to sanitize fabric, suede, and leather couches.',
-      id: 'Cleanox mengembalikan kesegaran furnitur ruang tamu Anda. Jasa cuci sofa kami di Cibubur khususnya di Jabodetabek menggunakan cairan pembersih khusus serat kain dan vakum ekstraktor untuk mensanitasi sofa kain, suede, dan kulit.'
+      en: 'Cleanox restores the freshness of your living room furniture. Our sofa cleaning service in Cibubur uses specialized upholstery cleaning solutions and vacuum extractors to sanitize fabric, suede, and leather couches.',
+      id: 'Cleanox mengembalikan kesegaran furnitur ruang tamu Anda. Jasa cuci sofa kami di Cibubur menggunakan cairan pembersih khusus serat kain dan vakum ekstraktor untuk mensanitasi sofa kain, suede, dan kulit.'
     },
     features: [
       {
@@ -529,12 +529,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cuci Bedcover & Selimut Cibubur | Waschen'
     },
     description: {
-      en: 'Premium bedcover, duvet, and blanket laundry in Cibubur especially in Jabodetabek. Deep sanitation to ensure clean and healthy sleeping experiences.',
-      id: 'Jasa cuci bedcover, duvet, dan selimut premium di Cibubur khususnya di Jabodetabek. Sanitasi mendalam untuk memastikan tidur yang nyaman, bersih, dan sehat.'
+      en: 'Premium bedcover, duvet, and blanket laundry in Cibubur. Deep sanitation to ensure clean and healthy sleeping experiences.',
+      id: 'Jasa cuci bedcover, duvet, dan selimut premium di Cibubur. Sanitasi mendalam untuk memastikan tidur yang nyaman, bersih, dan sehat.'
     },
     h1: {
-      en: 'Premium Bedcover & Blanket Laundry in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cuci Bedcover & Selimut Premium di Cibubur khususnya di Jabodetabek'
+      en: 'Premium Bedcover & Blanket Laundry in Cibubur',
+      id: 'Jasa Cuci Bedcover & Selimut Premium di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Bedcover Laundry', id: 'Cuci Bedcover' },
@@ -563,19 +563,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cuci & Restorasi Sepatu Cibubur | Waschen'
     },
     description: {
-      en: 'Premium shoe cleaning and restoration service in Cibubur especially in Jabodetabek. Specialized treatment for sneakers, leather shoes, heels, and boots.',
-      id: 'Jasa cuci dan restorasi sepatu premium di Cibubur khususnya di Jabodetabek. Penanganan khusus untuk sneaker, sepatu kulit, flatshoes, heels, dan boots.'
+      en: 'Premium shoe cleaning and restoration service in Cibubur. Specialized treatment for sneakers, leather shoes, heels, and boots.',
+      id: 'Jasa cuci dan restorasi sepatu premium di Cibubur. Penanganan khusus untuk sneaker, sepatu kulit, flatshoes, heels, dan boots.'
     },
     h1: {
-      en: 'Premium Shoe Cleaning & Restoration in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cuci & Restorasi Sepatu Premium di Cibubur khususnya di Jabodetabek'
+      en: 'Premium Shoe Cleaning & Restoration in Cibubur',
+      id: 'Jasa Cuci & Restorasi Sepatu Premium di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Shoe Cleaning', id: 'Cuci Sepatu' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Waschen Alora provides expert shoe cleaning and color restoration services in Cibubur especially in Jabodetabek. We treat canvas, suede, nubuck, and leather shoes using premium cleaning kits to preserve the material structure.',
-      id: 'Waschen Alora menyediakan jasa pencucian sepatu ahli dan restorasi warna di Cibubur khususnya di Jabodetabek. Kami merawat sepatu kanvas, suede, nubuck, hingga kulit menggunakan sabun pembersih khusus untuk melindungi serat material.'
+      en: 'Waschen Alora provides expert shoe cleaning and color restoration services in Cibubur. We treat canvas, suede, nubuck, and leather shoes using premium cleaning kits to preserve the material structure.',
+      id: 'Waschen Alora menyediakan jasa pencucian sepatu ahli dan restorasi warna di Cibubur. Kami merawat sepatu kanvas, suede, nubuck, hingga kulit menggunakan sabun pembersih khusus untuk melindungi serat material.'
     },
     features: [
       {
@@ -597,19 +597,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cuci Tas & Perawatan Kulit Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Premium bag cleaning and leather care services in Cibubur especially in Jabodetabek. Specialized treatments for luxury handbags, backpacks, and leather items.',
-      id: 'Jasa cuci tas premium dan perawatan kulit di Cibubur khususnya di Jabodetabek. Penanganan khusus untuk tas mewah (brand luxury), ransel, dan material kulit.'
+      en: 'Premium bag cleaning and leather care services in Cibubur. Specialized treatments for luxury handbags, backpacks, and leather items.',
+      id: 'Jasa cuci tas premium dan perawatan kulit di Cibubur. Penanganan khusus untuk tas mewah (brand luxury), ransel, dan material kulit.'
     },
     h1: {
-      en: 'Premium Bag Cleaning & Leather Care in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cuci Tas Premium & Perawatan Kulit di Cibubur khususnya di Jabodetabek'
+      en: 'Premium Bag Cleaning & Leather Care in Cibubur',
+      id: 'Jasa Cuci Tas Premium & Perawatan Kulit di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Bag Cleaning', id: 'Cuci Tas' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Waschen Alora offers high-end bag cleaning and sanitization in Cibubur especially in Jabodetabek. We clean dust, mold, and stains from designer bags, maintaining the shape and texture of genuine leather, nylon, and suede fabrics.',
-      id: 'Waschen Alora menawarkan cuci tas premium dan sanitasi di Cibubur khususnya di Jabodetabek. Kami membersihkan debu, jamur, dan noda dari tas branded, sekaligus menjaga bentuk dan kelembutan bahan kulit asli, nilon, dan kain suede.'
+      en: 'Waschen Alora offers high-end bag cleaning and sanitization in Cibubur. We clean dust, mold, and stains from designer bags, maintaining the shape and texture of genuine leather, nylon, and suede fabrics.',
+      id: 'Waschen Alora menawarkan cuci tas premium dan sanitasi di Cibubur. Kami membersihkan debu, jamur, dan noda dari tas branded, sekaligus menjaga bentuk dan kelembutan bahan kulit asli, nilon, dan kain suede.'
     },
     features: [
       {
@@ -631,12 +631,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Express Cepat Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Need clothes washed fast? Get our express laundry service in Cibubur especially in Jabodetabek. Clean, dry, and pressed in 3 to 24 hours.',
-      id: 'Butuh laundry pakaian selesai cepat? Gunakan layanan laundry ekspres di Cibubur khususnya di Jabodetabek. Bersih, kering, dan disetrika rapi dalam 3 hingga 24 jam.'
+      en: 'Need clothes washed fast? Get our express laundry service in Cibubur. Clean, dry, and pressed in 3 to 24 hours.',
+      id: 'Butuh laundry pakaian selesai cepat? Gunakan layanan laundry ekspres di Cibubur. Bersih, kering, dan disetrika rapi dalam 3 hingga 24 jam.'
     },
     h1: {
-      en: 'Fast Express Laundry Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Laundry Express Cepat di Cibubur khususnya di Jabodetabek'
+      en: 'Fast Express Laundry Services in Cibubur',
+      id: 'Jasa Laundry Express Cepat di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Express Laundry', id: 'Laundry Express' },
@@ -665,19 +665,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry & Dry Cleaning Terbaik Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Waschen Alora is the top laundry and dry cleaning provider in Cibubur especially in Jabodetabek. Premium washing machines, clean water filtration, and certified sanitization.',
-      id: 'Waschen Alora adalah penyedia jasa laundry & dry cleaning terbaik di Cibubur khususnya di Jabodetabek. Menggunakan mesin cuci premium, filter air bersih, dan sanitasi bersertifikat.'
+      en: 'Waschen Alora is the top laundry and dry cleaning provider in Cibubur. Premium washing machines, clean water filtration, and certified sanitization.',
+      id: 'Waschen Alora adalah penyedia jasa laundry & dry cleaning terbaik di Cibubur. Menggunakan mesin cuci premium, filter air bersih, dan sanitasi bersertifikat.'
     },
     h1: {
-      en: 'Best Laundry & Dry Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Layanan Laundry & Dry Cleaning Terbaik di Cibubur khususnya di Jabodetabek'
+      en: 'Best Laundry & Dry Cleaning Services in Cibubur',
+      id: 'Layanan Laundry & Dry Cleaning Terbaik di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Best Laundry', id: 'Laundry Terbaik' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Waschen Alora Indonesia is your trusted partner for laundry and hygiene in Cibubur especially in Jabodetabek. Offering complete B2C retail and B2B commercial laundry solutions, we deliver accurate, clean, and reliable results.',
-      id: 'Waschen Alora Indonesia adalah mitra terpercaya Anda untuk urusan laundry dan kebersihan di Cibubur khususnya di Jabodetabek. Menyediakan layanan ritel B2C dan komersial B2B lengkap, kami menjamin pakaian Anda bersih higienis.'
+      en: 'Waschen Alora Indonesia is your trusted partner for laundry and hygiene in Cibubur. Offering complete B2C retail and B2B commercial laundry solutions, we deliver accurate, clean, and reliable results.',
+      id: 'Waschen Alora Indonesia adalah mitra terpercaya Anda untuk urusan laundry dan kebersihan di Cibubur. Menyediakan layanan ritel B2C dan komersial B2B lengkap, kami menjamin pakaian Anda bersih higienis.'
     },
     features: [
       {
@@ -699,12 +699,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Premium & Dry Cleaning Gunung Putri | Waschen Alora'
     },
     description: {
-      en: 'Professional laundry services in Gunung Putri especially in Jabodetabek. Secure washing, eco-friendly detergents, and premium ironing with pickup and delivery.',
-      id: 'Jasa laundry profesional di Gunung Putri khususnya di Jabodetabek. Proses cuci aman, detergen ramah lingkungan, dan setrika rapi dengan antar jemput.'
+      en: 'Professional laundry services in Gunung Putri especially in Cibubur. Secure washing, eco-friendly detergents, and premium ironing with pickup and delivery.',
+      id: 'Jasa laundry profesional di Gunung Putri khususnya di Cibubur. Proses cuci aman, detergen ramah lingkungan, dan setrika rapi dengan antar jemput.'
     },
     h1: {
-      en: 'Premium Laundry & Dry Cleaning in Gunung Putri especially in Jabodetabek',
-      id: 'Jasa Laundry Premium & Dry Cleaning di Gunung Putri khususnya di Jabodetabek'
+      en: 'Premium Laundry & Dry Cleaning in Gunung Putri especially in Cibubur',
+      id: 'Jasa Laundry Premium & Dry Cleaning di Gunung Putri khususnya di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
@@ -721,8 +721,8 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'Do you cover Gunung Putri residential clusters?', id: 'Apakah melayani perumahan di Gunung Putri khususnya di Jabodetabek?' },
-        a: { en: 'Yes, our pickup and delivery service covers major residential zones and estates in Gunung Putri especially in Jabodetabek.', id: 'Ya, kurir antar-jemput kami menjangkau area pemukiman dan kompleks perumahan utama di Gunung Putri khususnya di Jabodetabek.' }
+        q: { en: 'Do you cover Gunung Putri residential clusters?', id: 'Apakah melayani perumahan di Gunung Putri khususnya di Cibubur?' },
+        a: { en: 'Yes, our pickup and delivery service covers major residential zones and estates in Gunung Putri especially in Cibubur.', id: 'Ya, kurir antar-jemput kami menjangkau area pemukiman dan kompleks perumahan utama di Gunung Putri khususnya di Cibubur.' }
       }
     ]
   },
@@ -733,12 +733,12 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Premium Kota Wisata Cibubur | Waschen Alora'
     },
     description: {
-      en: 'Premium laundry and dry cleaning services for all clusters in Kota Wisata especially in Jabodetabek Cibubur. Express turnaround and certified hygiene standards.',
-      id: 'Layanan laundry premium dan dry cleaning untuk seluruh cluster di Kota Wisata khususnya di Jabodetabek Cibubur. Selesai cepat dengan standar higienis bersertifikasi.'
+      en: 'Premium laundry and dry cleaning services for all clusters in Kota Wisata especially in Cibubur Cibubur. Express turnaround and certified hygiene standards.',
+      id: 'Layanan laundry premium dan dry cleaning untuk seluruh cluster di Kota Wisata khususnya di Cibubur Cibubur. Selesai cepat dengan standar higienis bersertifikasi.'
     },
     h1: {
-      en: 'Premium Laundry & Dry Cleaning in Kota Wisata especially in Jabodetabek',
-      id: 'Jasa Laundry Premium di Kota Wisata khususnya di Jabodetabek'
+      en: 'Premium Laundry & Dry Cleaning in Kota Wisata especially in Cibubur',
+      id: 'Jasa Laundry Premium di Kota Wisata khususnya di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
@@ -767,19 +767,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Premium Citra Grand | Waschen Alora'
     },
     description: {
-      en: 'Reliable laundry and dry cleaning services for Citra Grand especially in Jabodetabek residents. Fast, hygienic, and eco-friendly garment care with delivery.',
-      id: 'Jasa laundry dan dry cleaning terpercaya untuk warga Citra Grand khususnya di Jabodetabek. Perawatan pakaian cepat, higienis, ramah lingkungan, dengan antar jemput.'
+      en: 'Reliable laundry and dry cleaning services for Citra Grand especially in Cibubur residents. Fast, hygienic, and eco-friendly garment care with delivery.',
+      id: 'Jasa laundry dan dry cleaning terpercaya untuk warga Citra Grand khususnya di Cibubur. Perawatan pakaian cepat, higienis, ramah lingkungan, dengan antar jemput.'
     },
     h1: {
-      en: 'Premium Laundry & Dry Cleaning in Citra Grand especially in Jabodetabek',
-      id: 'Jasa Laundry Premium di Citra Grand khususnya di Jabodetabek'
+      en: 'Premium Laundry & Dry Cleaning in Citra Grand especially in Cibubur',
+      id: 'Jasa Laundry Premium di Citra Grand khususnya di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Premium Laundry', id: 'Laundry Premium' },
     locationName: { en: 'Citra Grand (Jabodetabek)', id: 'Citra Grand (Jabodetabek)' },
     descriptionDetailed: {
       en: 'Waschen Alora provides Citra Grand residents with accurate, detailed, and precise laundry services. Enjoy our certified washing protocols and professional clothing care.',
-      id: 'Waschen Alora menyediakan layanan laundry yang tepat, bersih, dan detail untuk warga Citra Grand khususnya di Jabodetabek. Nikmati protokol pencucian bersertifikat dan perawatan kain profesional.'
+      id: 'Waschen Alora menyediakan layanan laundry yang tepat, bersih, dan detail untuk warga Citra Grand khususnya di Cibubur. Nikmati protokol pencucian bersertifikat dan perawatan kain profesional.'
     },
     features: [
       {
@@ -801,19 +801,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Laundry Komersial Premium Jakarta Timur | Waschen Alora'
     },
     description: {
-      en: 'Commercial and retail laundry services in East Jakarta especially in Jabodetabek. Certified medical laundry, hotel linen rentals, and premium household laundry.',
-      id: 'Jasa laundry komersial dan ritel di Jakarta Timur khususnya di Jabodetabek. Laundry medis berlisensi, sewa linen hotel, dan laundry premium rumah tangga.'
+      en: 'Commercial and retail laundry services in East Jakarta especially in Cibubur. Certified medical laundry, hotel linen rentals, and premium household laundry.',
+      id: 'Jasa laundry komersial dan ritel di Jakarta Timur khususnya di Cibubur. Laundry medis berlisensi, sewa linen hotel, dan laundry premium rumah tangga.'
     },
     h1: {
-      en: 'Premium Commercial & Retail Laundry in East Jakarta especially in Jabodetabek',
-      id: 'Jasa Laundry Komersial & Ritel di Jakarta Timur khususnya di Jabodetabek'
+      en: 'Premium Commercial & Retail Laundry in East Jakarta especially in Cibubur',
+      id: 'Jasa Laundry Komersial & Ritel di Jakarta Timur khususnya di Cibubur'
     },
     unit: 'waschen',
     serviceName: { en: 'Commercial Laundry', id: 'Laundry Komersial' },
     locationName: { en: 'East Jakarta (Jabodetabek)', id: 'Jakarta Timur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'As a holding company located on the border of East Jakarta and Depok, PT Waschen Alora Indonesia serves businesses, clinics, hotels, and households across East Jakarta especially in Jabodetabek with high-standard commercial and premium retail laundry.',
-      id: 'Sebagai holding company yang terletak di perbatasan Jakarta Timur dan Depok, PT Waschen Alora Indonesia melayani bisnis, klinik, hotel, dan rumah tangga di seluruh Jakarta Timur khususnya di Jabodetabek dengan laundry komersial standar tinggi dan laundry ritel premium.'
+      en: 'As a holding company located on the border of East Jakarta and Depok, PT Waschen Alora Indonesia serves businesses, clinics, hotels, and households across East Jakarta especially in Cibubur with high-standard commercial and premium retail laundry.',
+      id: 'Sebagai holding company yang terletak di perbatasan Jakarta Timur dan Depok, PT Waschen Alora Indonesia melayani bisnis, klinik, hotel, dan rumah tangga di seluruh Jakarta Timur khususnya di Cibubur dengan laundry komersial standar tinggi dan laundry ritel premium.'
     },
     features: [
       {
@@ -823,8 +823,8 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'Do you offer pickup across East Jakarta especially in Jabodetabek?', id: 'Apakah melayani antar-jemput ke Jakarta Timur?' },
-        a: { en: 'Yes, we provide pickup and delivery routes for businesses and homes in various locations across East Jakarta especially in Jabodetabek.', id: 'Ya, rute antar-jemput kami menjangkau bisnis dan perumahan di berbagai wilayah Jakarta Timur.' }
+        q: { en: 'Do you offer pickup across East Jakarta especially in Cibubur?', id: 'Apakah melayani antar-jemput ke Jakarta Timur?' },
+        a: { en: 'Yes, we provide pickup and delivery routes for businesses and homes in various locations across East Jakarta especially in Cibubur.', id: 'Ya, rute antar-jemput kami menjangkau bisnis dan perumahan di berbagai wilayah Jakarta Timur.' }
       }
     ]
   },
@@ -933,23 +933,23 @@ export const keywordsData: Record<string, KeywordItem> = {
   'jasa-cleaning-service-cibubur': {
     slug: 'jasa-cleaning-service-cibubur',
     title: {
-      en: 'Premium Cleaning Service in Cibubur especially in Jabodetabek | Cleanox',
-      id: 'Jasa Cleaning Service Premium di Cibubur khususnya di Jabodetabek | Cleanox'
+      en: 'Premium Cleaning Service in Cibubur | Cleanox',
+      id: 'Jasa Cleaning Service Premium di Cibubur | Cleanox'
     },
     description: {
-      en: 'Premium home, office, and building cleaning services in Cibubur especially in Jabodetabek. Deep cleaning, carpet washing, and sofa sanitization.',
-      id: 'Jasa cleaning service premium untuk rumah, kantor, dan gedung di Cibubur khususnya di Jabodetabek. Deep cleaning, cuci karpet, dan sanitasi sofa.'
+      en: 'Premium home, office, and building cleaning services in Cibubur. Deep cleaning, carpet washing, and sofa sanitization.',
+      id: 'Jasa cleaning service premium untuk rumah, kantor, dan gedung di Cibubur. Deep cleaning, cuci karpet, dan sanitasi sofa.'
     },
     h1: {
-      en: 'Premium Cleaning Services in Cibubur especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Premium di Cibubur khususnya di Jabodetabek'
+      en: 'Premium Cleaning Services in Cibubur',
+      id: 'Jasa Cleaning Service Premium di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Cibubur (Jabodetabek)', id: 'Cibubur (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox delivers high-end commercial and residential cleaning services in Cibubur especially in Jabodetabek. Our certified cleaning staff utilizes eco-friendly products for a safer home and work environment.',
-      id: 'Cleanox menghadirkan jasa kebersihan komersial dan hunian premium di Cibubur khususnya di Jabodetabek. Staf kami yang tersertifikasi menggunakan produk ramah lingkungan demi keamanan keluarga.'
+      en: 'Cleanox delivers high-end commercial and residential cleaning services in Cibubur. Our certified cleaning staff utilizes eco-friendly products for a safer home and work environment.',
+      id: 'Cleanox menghadirkan jasa kebersihan komersial dan hunian premium di Cibubur. Staf kami yang tersertifikasi menggunakan produk ramah lingkungan demi keamanan keluarga.'
     },
     features: [
       {
@@ -1311,19 +1311,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Vendor Laundry Rumah Sakit & Klinik Jakarta | PT IKM'
     },
     description: {
-      en: 'Certified hospital laundry vendor in Jakarta especially in Jabodetabek. Medical-grade sanitization, KARS compliance, and reliable logistics for healthcare facilities.',
-      id: 'Vendor laundry rumah sakit bersertifikat di Jakarta khususnya di Jabodetabek. Sanitasi standar medis, kepatuhan KARS, dan logistik terpercaya untuk fasilitas kesehatan.'
+      en: 'Certified hospital laundry vendor in Jakarta especially in Cibubur. Medical-grade sanitization, KARS compliance, and reliable logistics for healthcare facilities.',
+      id: 'Vendor laundry rumah sakit bersertifikat di Jakarta khususnya di Cibubur. Sanitasi standar medis, kepatuhan KARS, dan logistik terpercaya untuk fasilitas kesehatan.'
     },
     h1: {
-      en: 'Hospital Laundry Vendor in Jakarta especially in Jabodetabek',
-      id: 'Vendor Laundry Rumah Sakit & Klinik di Jakarta khususnya di Jabodetabek'
+      en: 'Hospital Laundry Vendor in Jakarta especially in Cibubur',
+      id: 'Vendor Laundry Rumah Sakit & Klinik di Jakarta khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry Vendor', id: 'Vendor Laundry Rumah Sakit' },
     locationName: { en: 'Jakarta (Jabodetabek)', id: 'Jakarta (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM serves as a leading hospital laundry vendor across Jakarta especially in Jabodetabek, providing dedicated disinfection processes for bedsheets, surgical scrubs, and healthcare linens to prevent cross-contamination.',
-      id: 'PT IKM bertindak sebagai vendor laundry rumah sakit terkemuka di Jakarta khususnya di Jabodetabek, menyediakan proses disinfeksi khusus untuk seprei, baju bedah, dan linen kesehatan guna mencegah kontaminasi silang.'
+      en: 'PT IKM serves as a leading hospital laundry vendor across Jakarta especially in Cibubur, providing dedicated disinfection processes for bedsheets, surgical scrubs, and healthcare linens to prevent cross-contamination.',
+      id: 'PT IKM bertindak sebagai vendor laundry rumah sakit terkemuka di Jakarta khususnya di Cibubur, menyediakan proses disinfeksi khusus untuk seprei, baju bedah, dan linen kesehatan guna mencegah kontaminasi silang.'
     },
     features: [
       {
@@ -1345,19 +1345,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Vendor Laundry Rumah Sakit & Klinik Bekasi | PT IKM'
     },
     description: {
-      en: 'Professional medical laundry vendor in Bekasi especially in Jabodetabek. Bulk linen washing, pathogen eradication, and timely logistical distribution.',
-      id: 'Vendor laundry medis profesional di Bekasi khususnya di Jabodetabek. Pencucian linen massal, pemusnahan kuman penyakit, dan distribusi logistik tepat waktu.'
+      en: 'Professional medical laundry vendor in Bekasi especially in Cibubur. Bulk linen washing, pathogen eradication, and timely logistical distribution.',
+      id: 'Vendor laundry medis profesional di Bekasi khususnya di Cibubur. Pencucian linen massal, pemusnahan kuman penyakit, dan distribusi logistik tepat waktu.'
     },
     h1: {
-      en: 'Hospital Laundry Vendor in Bekasi especially in Jabodetabek',
-      id: 'Vendor Laundry Rumah Sakit & Klinik di Bekasi khususnya di Jabodetabek'
+      en: 'Hospital Laundry Vendor in Bekasi especially in Cibubur',
+      id: 'Vendor Laundry Rumah Sakit & Klinik di Bekasi khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry Vendor', id: 'Vendor Laundry Rumah Sakit' },
     locationName: { en: 'Bekasi (Jabodetabek)', id: 'Bekasi (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM offers tailored B2B hospital laundry services in Bekasi especially in Jabodetabek, providing medical institutions with reliable linen washing, packaging, and delivery routes.',
-      id: 'PT IKM menawarkan jasa laundry rumah sakit B2B di Bekasi khususnya di Jabodetabek, menyediakan pencucian linen, pengemasan, dan pengiriman terjadwal yang andal bagi institusi medis.'
+      en: 'PT IKM offers tailored B2B hospital laundry services in Bekasi especially in Cibubur, providing medical institutions with reliable linen washing, packaging, and delivery routes.',
+      id: 'PT IKM menawarkan jasa laundry rumah sakit B2B di Bekasi khususnya di Cibubur, menyediakan pencucian linen, pengemasan, dan pengiriman terjadwal yang andal bagi institusi medis.'
     },
     features: [
       {
@@ -1367,7 +1367,7 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'What is your capacity for Bekasi especially in Jabodetabek clients?', id: 'Berapa kapasitas cuci untuk klien Bekasi?' },
+        q: { en: 'What is your capacity for Bekasi especially in Cibubur clients?', id: 'Berapa kapasitas cuci untuk klien Bekasi?' },
         a: { en: 'We process several tons of medical linens daily, supporting large-scale public and private hospitals.', id: 'Kami memproses beberapa ton linen medis setiap hari, mendukung rumah sakit umum dan swasta skala besar.' }
       }
     ]
@@ -1379,19 +1379,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Vendor Laundry Rumah Sakit & Medis Bogor | PT IKM'
     },
     description: {
-      en: 'Certified healthcare laundry vendor in Bogor especially in Jabodetabek. Disinfection washing, linen leasing, and reliable transport for clinics and hospitals.',
-      id: 'Vendor laundry kesehatan bersertifikat di Bogor khususnya di Jabodetabek. Pencucian disinfektan, sewa linen, dan transportasi andal untuk klinik dan rumah sakit.'
+      en: 'Certified healthcare laundry vendor in Bogor especially in Cibubur. Disinfection washing, linen leasing, and reliable transport for clinics and hospitals.',
+      id: 'Vendor laundry kesehatan bersertifikat di Bogor khususnya di Cibubur. Pencucian disinfektan, sewa linen, dan transportasi andal untuk klinik dan rumah sakit.'
     },
     h1: {
-      en: 'Hospital Laundry Vendor in Bogor especially in Jabodetabek',
-      id: 'Vendor Laundry Rumah Sakit di Bogor khususnya di Jabodetabek'
+      en: 'Hospital Laundry Vendor in Bogor especially in Cibubur',
+      id: 'Vendor Laundry Rumah Sakit di Bogor khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry Vendor', id: 'Vendor Laundry Rumah Sakit' },
     locationName: { en: 'Bogor (Jabodetabek)', id: 'Bogor (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM delivers professional medical laundry services across Bogor especially in Jabodetabek. We maintain absolute sterility and hygiene for bedsheets, doctor gowns, and patient uniforms.',
-      id: 'PT IKM menghadirkan jasa laundry medis profesional di seluruh Bogor khususnya di Jabodetabek. Kami menjaga sterilitas dan higienitas mutlak untuk seprei, jas dokter, dan seragam pasien.'
+      en: 'PT IKM delivers professional medical laundry services across Bogor especially in Cibubur. We maintain absolute sterility and hygiene for bedsheets, doctor gowns, and patient uniforms.',
+      id: 'PT IKM menghadirkan jasa laundry medis profesional di seluruh Bogor khususnya di Cibubur. Kami menjaga sterilitas dan higienitas mutlak untuk seprei, jas dokter, dan seragam pasien.'
     },
     features: [
       {
@@ -1413,19 +1413,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Vendor Laundry Rumah Sakit & Linen Depok | PT IKM'
     },
     description: {
-      en: 'Certified hospital laundry vendor in Depok especially in Jabodetabek. We provide medical-grade washing, linen management, and accredited hygiene solutions.',
-      id: 'Vendor laundry rumah sakit bersertifikat di Depok khususnya di Jabodetabek. Menyediakan pencucian standar medis, manajemen linen, dan solusi higienis terakreditasi.'
+      en: 'Certified hospital laundry vendor in Depok especially in Cibubur. We provide medical-grade washing, linen management, and accredited hygiene solutions.',
+      id: 'Vendor laundry rumah sakit bersertifikat di Depok khususnya di Cibubur. Menyediakan pencucian standar medis, manajemen linen, dan solusi higienis terakreditasi.'
     },
     h1: {
-      en: 'Hospital Laundry Vendor in Depok especially in Jabodetabek',
-      id: 'Vendor Laundry Rumah Sakit di Depok khususnya di Jabodetabek'
+      en: 'Hospital Laundry Vendor in Depok especially in Cibubur',
+      id: 'Vendor Laundry Rumah Sakit di Depok khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry Vendor', id: 'Vendor Laundry Rumah Sakit' },
     locationName: { en: 'Depok (Jabodetabek)', id: 'Depok (Jabodetabek)' },
     descriptionDetailed: {
       en: 'PT IKM supports Depok healthcare facilities with high-standard commercial laundry. We guarantee sterilized, clean linens that meet hospital accreditation requirements.',
-      id: 'PT IKM mendukung fasilitas kesehatan di Depok khususnya di Jabodetabek dengan laundry komersial standar tinggi. Kami menjamin linen steril dan bersih yang memenuhi persyaratan akreditasi.'
+      id: 'PT IKM mendukung fasilitas kesehatan di Depok khususnya di Cibubur dengan laundry komersial standar tinggi. Kami menjamin linen steril dan bersih yang memenuhi persyaratan akreditasi.'
     },
     features: [
       {
@@ -1447,19 +1447,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Laundry Rumah Sakit & Sewa Linen Jakarta | PT IKM'
     },
     description: {
-      en: 'Professional medical laundry services and linen rental in Jakarta especially in Jabodetabek. Sterile washing processes for clinics, hospitals, and quarantine centers.',
-      id: 'Jasa laundry medis profesional dan sewa linen di Jakarta khususnya di Jabodetabek. Proses cuci steril untuk klinik, rumah sakit, dan pusat karantina.'
+      en: 'Professional medical laundry services and linen rental in Jakarta especially in Cibubur. Sterile washing processes for clinics, hospitals, and quarantine centers.',
+      id: 'Jasa laundry medis profesional dan sewa linen di Jakarta khususnya di Cibubur. Proses cuci steril untuk klinik, rumah sakit, dan pusat karantina.'
     },
     h1: {
-      en: 'Hospital Laundry & Linen Rental Services in Jakarta especially in Jabodetabek',
-      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Jakarta khususnya di Jabodetabek'
+      en: 'Hospital Laundry & Linen Rental Services in Jakarta especially in Cibubur',
+      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Jakarta khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry', id: 'Laundry Rumah Sakit' },
     locationName: { en: 'Jakarta (Jabodetabek)', id: 'Jakarta (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM offers comprehensive medical laundry and linen rental services in Jakarta especially in Jabodetabek. We provide sterile hospital linens, including sheets, scrubs, and laboratory wear with routine pickup and delivery.',
-      id: 'PT IKM menawarkan jasa laundry medis dan sewa linen komprehensif di Jakarta khususnya di Jabodetabek. Kami menyediakan linen steril, baju bedah, dan jas lab dengan antar-jemput rutin.'
+      en: 'PT IKM offers comprehensive medical laundry and linen rental services in Jakarta especially in Cibubur. We provide sterile hospital linens, including sheets, scrubs, and laboratory wear with routine pickup and delivery.',
+      id: 'PT IKM menawarkan jasa laundry medis dan sewa linen komprehensif di Jakarta khususnya di Cibubur. Kami menyediakan linen steril, baju bedah, dan jas lab dengan antar-jemput rutin.'
     },
     features: [
       {
@@ -1481,19 +1481,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Laundry Rumah Sakit & Sewa Linen Bekasi | PT IKM'
     },
     description: {
-      en: 'Professional medical laundry services and linen rentals for hospitals and clinics in Bekasi especially in Jabodetabek. Disinfected, soft, and pristine linens.',
-      id: 'Jasa laundry medis profesional dan sewa linen untuk rumah sakit & klinik di Bekasi khususnya di Jabodetabek. Linen disinfeksi, lembut, dan putih cemerlang.'
+      en: 'Professional medical laundry services and linen rentals for hospitals and clinics in Bekasi especially in Cibubur. Disinfected, soft, and pristine linens.',
+      id: 'Jasa laundry medis profesional dan sewa linen untuk rumah sakit & klinik di Bekasi khususnya di Cibubur. Linen disinfeksi, lembut, dan putih cemerlang.'
     },
     h1: {
-      en: 'Hospital Laundry & Linen Rental Services in Bekasi especially in Jabodetabek',
-      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Bekasi khususnya di Jabodetabek'
+      en: 'Hospital Laundry & Linen Rental Services in Bekasi especially in Cibubur',
+      id: 'Jasa Laundry Rumah Sakit & Sewa Linen di Bekasi khususnya di Cibubur'
     },
     unit: 'ikm',
     serviceName: { en: 'Hospital Laundry', id: 'Laundry Rumah Sakit' },
     locationName: { en: 'Bekasi (Jabodetabek)', id: 'Bekasi (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'PT IKM delivers certified medical laundry and linen solutions in Bekasi especially in Jabodetabek. We process patient gowns, blankets, and staff uniforms under strict hygienic conditions to ensure patient safety.',
-      id: 'PT IKM menghadirkan jasa laundry medis dan linen bersertifikat di Bekasi khususnya di Jabodetabek. Kami mencuci baju pasien, selimut, dan seragam staf demi keselamatan pasien.'
+      en: 'PT IKM delivers certified medical laundry and linen solutions in Bekasi especially in Cibubur. We process patient gowns, blankets, and staff uniforms under strict hygienic conditions to ensure patient safety.',
+      id: 'PT IKM menghadirkan jasa laundry medis dan linen bersertifikat di Bekasi khususnya di Cibubur. Kami mencuci baju pasien, selimut, dan seragam staf demi keselamatan pasien.'
     },
     features: [
       {
@@ -1515,19 +1515,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Profesional Jakarta | Cleanox'
     },
     description: {
-      en: 'Professional home, office, and building cleaning services in Jakarta especially in Jabodetabek. Certified staff, deep sanitization, and eco-friendly products.',
-      id: 'Jasa kebersihan rumah, kantor, dan gedung profesional di Jakarta khususnya di Jabodetabek. Staf tersertifikasi, sanitasi mendalam, dan produk ramah lingkungan.'
+      en: 'Professional home, office, and building cleaning services in Jakarta especially in Cibubur. Certified staff, deep sanitization, and eco-friendly products.',
+      id: 'Jasa kebersihan rumah, kantor, dan gedung profesional di Jakarta khususnya di Cibubur. Staf tersertifikasi, sanitasi mendalam, dan produk ramah lingkungan.'
     },
     h1: {
-      en: 'Professional Cleaning Services in Jakarta especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Profesional di Jakarta khususnya di Jabodetabek'
+      en: 'Professional Cleaning Services in Jakarta especially in Cibubur',
+      id: 'Jasa Cleaning Service Profesional di Jakarta khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Jakarta (Jabodetabek)', id: 'Jakarta (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox provides premier commercial and residential cleaning services in Jakarta especially in Jabodetabek. We manage deep cleaning, post-renovation cleanup, and routine facility sanitization with high-efficiency equipment.',
-      id: 'Cleanox menyediakan jasa kebersihan komersial dan hunian premium di Jakarta khususnya di Jabodetabek. Kami melayani deep cleaning, pembersihan pasca-renovasi, dan sanitasi berkala.'
+      en: 'Cleanox provides premier commercial and residential cleaning services in Jakarta especially in Cibubur. We manage deep cleaning, post-renovation cleanup, and routine facility sanitization with high-efficiency equipment.',
+      id: 'Cleanox menyediakan jasa kebersihan komersial dan hunian premium di Jakarta khususnya di Cibubur. Kami melayani deep cleaning, pembersihan pasca-renovasi, dan sanitasi berkala.'
     },
     features: [
       {
@@ -1549,19 +1549,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Profesional Bekasi | Cleanox'
     },
     description: {
-      en: 'Reliable cleaning services for homes and workplaces in Bekasi especially in Jabodetabek. Certified cleaners, carpet washing, and sofa sanitization.',
-      id: 'Jasa kebersihan terpercaya untuk rumah dan tempat kerja di Bekasi khususnya di Jabodetabek. Pembersih bersertifikat, cuci karpet, dan sanitasi sofa.'
+      en: 'Reliable cleaning services for homes and workplaces in Bekasi especially in Cibubur. Certified cleaners, carpet washing, and sofa sanitization.',
+      id: 'Jasa kebersihan terpercaya untuk rumah dan tempat kerja di Bekasi khususnya di Cibubur. Pembersih bersertifikat, cuci karpet, dan sanitasi sofa.'
     },
     h1: {
-      en: 'Professional Cleaning Services in Bekasi especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Profesional di Bekasi khususnya di Jabodetabek'
+      en: 'Professional Cleaning Services in Bekasi especially in Cibubur',
+      id: 'Jasa Cleaning Service Profesional di Bekasi khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Bekasi (Jabodetabek)', id: 'Bekasi (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox delivers high-quality cleaning services across Bekasi especially in Jabodetabek, keeping residential estates and commercial offices fresh, sanitized, and dust-free.',
-      id: 'Cleanox menghadirkan jasa kebersihan berkualitas di seluruh Bekasi khususnya di Jabodetabek, menjaga kompleks perumahan dan kantor komersial tetap segar dan bebas debu.'
+      en: 'Cleanox delivers high-quality cleaning services across Bekasi especially in Cibubur, keeping residential estates and commercial offices fresh, sanitized, and dust-free.',
+      id: 'Cleanox menghadirkan jasa kebersihan berkualitas di seluruh Bekasi khususnya di Cibubur, menjaga kompleks perumahan dan kantor komersial tetap segar dan bebas debu.'
     },
     features: [
       {
@@ -1583,19 +1583,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Profesional Depok | Cleanox'
     },
     description: {
-      en: 'Trusted home and office cleaning service in Depok especially in Jabodetabek. Deep disinfection, bathroom scrubbing, and post-construction cleaning.',
-      id: 'Jasa kebersihan rumah dan kantor terpercaya di Depok khususnya di Jabodetabek. Disinfeksi mendalam, pembersihan kamar mandi, dan pembersihan pasca-konstruksi.'
+      en: 'Trusted home and office cleaning service in Depok especially in Cibubur. Deep disinfection, bathroom scrubbing, and post-construction cleaning.',
+      id: 'Jasa kebersihan rumah dan kantor terpercaya di Depok khususnya di Cibubur. Disinfeksi mendalam, pembersihan kamar mandi, dan pembersihan pasca-konstruksi.'
     },
     h1: {
-      en: 'Professional Cleaning Services in Depok especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Profesional di Depok khususnya di Jabodetabek'
+      en: 'Professional Cleaning Services in Depok especially in Cibubur',
+      id: 'Jasa Cleaning Service Profesional di Depok khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Depok (Jabodetabek)', id: 'Depok (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox provides specialized cleaning and maintenance services in Depok especially in Jabodetabek, managing apartment units, commercial spaces, and residential complexes with precision and care.',
-      id: 'Cleanox menyediakan jasa kebersihan dan perawatan khusus di Depok khususnya di Jabodetabek, menangani unit apartemen, ruang usaha, dan perumahan secara teliti.'
+      en: 'Cleanox provides specialized cleaning and maintenance services in Depok especially in Cibubur, managing apartment units, commercial spaces, and residential complexes with precision and care.',
+      id: 'Cleanox menyediakan jasa kebersihan dan perawatan khusus di Depok khususnya di Cibubur, menangani unit apartemen, ruang usaha, dan perumahan secara teliti.'
     },
     features: [
       {
@@ -1605,7 +1605,7 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'Do you clean apartment units in Depok especially in Jabodetabek?', id: 'Apakah melayani pembersihan unit apartemen di Depok khususnya di Jabodetabek?' },
+        q: { en: 'Do you clean apartment units in Depok especially in Cibubur?', id: 'Apakah melayani pembersihan unit apartemen di Depok khususnya di Cibubur?' },
         a: { en: 'Yes, we provide specialized studio and multi-bedroom apartment deep cleaning services.', id: 'Ya, kami melayani deep cleaning untuk apartemen tipe studio maupun multi-bedroom.' }
       }
     ]
@@ -1617,19 +1617,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Profesional Bogor | Cleanox'
     },
     description: {
-      en: 'Reliable cleaning services in Bogor especially in Jabodetabek City and Regency. We clean houses, offices, and commercial buildings with professional standards.',
+      en: 'Reliable cleaning services in Bogor especially in Cibubur City and Regency. We clean houses, offices, and commercial buildings with professional standards.',
       id: 'Jasa kebersihan terpercaya di Kota dan Kabupaten Bogor. Kami membersihkan rumah, kantor, dan gedung dengan standar profesional.'
     },
     h1: {
-      en: 'Professional Cleaning Services in Bogor especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Profesional di Bogor khususnya di Jabodetabek'
+      en: 'Professional Cleaning Services in Bogor especially in Cibubur',
+      id: 'Jasa Cleaning Service Profesional di Bogor khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Cleaning Service', id: 'Cleaning Service' },
     locationName: { en: 'Bogor (Jabodetabek)', id: 'Bogor (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox offers premium janitorial and residential cleaning across Bogor especially in Jabodetabek, using advanced tools and certified janitors to ensure spotless comfort.',
-      id: 'Cleanox menawarkan jasa kebersihan perumahan dan janitorial premium di Bogor khususnya di Jabodetabek, memakai peralatan modern dan staf terlatih.'
+      en: 'Cleanox offers premium janitorial and residential cleaning across Bogor especially in Cibubur, using advanced tools and certified janitors to ensure spotless comfort.',
+      id: 'Cleanox menawarkan jasa kebersihan perumahan dan janitorial premium di Bogor khususnya di Cibubur, memakai peralatan modern dan staf terlatih.'
     },
     features: [
       {
@@ -1639,7 +1639,7 @@ export const keywordsData: Record<string, KeywordItem> = {
     ],
     faqs: [
       {
-        q: { en: 'Do you charge transport fees for Bogor especially in Jabodetabek areas?', id: 'Apakah dikenakan biaya transportasi untuk area Bogor?' },
+        q: { en: 'Do you charge transport fees for Bogor especially in Cibubur areas?', id: 'Apakah dikenakan biaya transportasi untuk area Bogor?' },
         a: { en: 'Transport fees depend on distance. Contact our admin for a detailed quote.', id: 'Biaya transportasi menyesuaikan jarak lokasi. Hubungi admin kami untuk rincian tarif.' }
       }
     ]
@@ -1651,19 +1651,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Kantor Jakarta | Cleanox'
     },
     description: {
-      en: 'Premium office cleaning services in Jakarta especially in Jabodetabek. Daily janitorial staff, carpet extraction, and workspace sanitization for corporate clients.',
-      id: 'Jasa cleaning service kantor premium di Jakarta khususnya di Jabodetabek. Janitor harian, cuci karpet kantor, dan sanitasi ruang kerja korporat.'
+      en: 'Premium office cleaning services in Jakarta especially in Cibubur. Daily janitorial staff, carpet extraction, and workspace sanitization for corporate clients.',
+      id: 'Jasa cleaning service kantor premium di Jakarta khususnya di Cibubur. Janitor harian, cuci karpet kantor, dan sanitasi ruang kerja korporat.'
     },
     h1: {
-      en: 'Office & Workplace Cleaning in Jakarta especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Kantor di Jakarta khususnya di Jabodetabek'
+      en: 'Office & Workplace Cleaning in Jakarta especially in Cibubur',
+      id: 'Jasa Cleaning Service Kantor di Jakarta khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Office Cleaning', id: 'Office Cleaning' },
     locationName: { en: 'Jakarta (Jabodetabek)', id: 'Jakarta (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox specializes in office cleaning services for corporate buildings in Jakarta especially in Jabodetabek. We maintain workspace hygiene, corridors, meeting rooms, toilets, and office carpets.',
-      id: 'Cleanox berspesialisasi dalam jasa kebersihan kantor untuk gedung perusahaan di Jakarta khususnya di Jabodetabek. Kami memelihara kebersihan meja, koridor, toilet, dan karpet.'
+      en: 'Cleanox specializes in office cleaning services for corporate buildings in Jakarta especially in Cibubur. We maintain workspace hygiene, corridors, meeting rooms, toilets, and office carpets.',
+      id: 'Cleanox berspesialisasi dalam jasa kebersihan kantor untuk gedung perusahaan di Jakarta khususnya di Cibubur. Kami memelihara kebersihan meja, koridor, toilet, dan karpet.'
     },
     features: [
       {
@@ -1685,19 +1685,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Jasa Cleaning Service Kantor Bekasi | Cleanox'
     },
     description: {
-      en: 'Professional office cleaning services in Bekasi especially in Jabodetabek. Improve workspace hygiene with custom daily or weekly cleaning packages.',
-      id: 'Jasa kebersihan kantor profesional di Bekasi khususnya di Jabodetabek. Tingkatkan kebersihan ruang kerja dengan paket harian atau mingguan.'
+      en: 'Professional office cleaning services in Bekasi especially in Cibubur. Improve workspace hygiene with custom daily or weekly cleaning packages.',
+      id: 'Jasa kebersihan kantor profesional di Bekasi khususnya di Cibubur. Tingkatkan kebersihan ruang kerja dengan paket harian atau mingguan.'
     },
     h1: {
-      en: 'Office & Commercial Cleaning in Bekasi especially in Jabodetabek',
-      id: 'Jasa Cleaning Service Kantor di Bekasi khususnya di Jabodetabek'
+      en: 'Office & Commercial Cleaning in Bekasi especially in Cibubur',
+      id: 'Jasa Cleaning Service Kantor di Bekasi khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Office Cleaning', id: 'Office Cleaning' },
     locationName: { en: 'Bekasi (Jabodetabek)', id: 'Bekasi (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox delivers corporate cleaning solutions for offices and commercial sites in Bekasi especially in Jabodetabek, managing lobby sanitation, workstation dusting, and toilet scrub-downs.',
-      id: 'Cleanox menyediakan solusi kebersihan korporat untuk kantor dan komersial di Bekasi khususnya di Jabodetabek, mengelola sanitasi lobi, meja kerja, dan kamar mandi.'
+      en: 'Cleanox delivers corporate cleaning solutions for offices and commercial sites in Bekasi especially in Cibubur, managing lobby sanitation, workstation dusting, and toilet scrub-downs.',
+      id: 'Cleanox menyediakan solusi kebersihan korporat untuk kantor dan komersial di Bekasi khususnya di Cibubur, mengelola sanitasi lobi, meja kerja, dan kamar mandi.'
     },
     features: [
       {
@@ -1719,19 +1719,19 @@ export const keywordsData: Record<string, KeywordItem> = {
       id: 'Outsourcing Cleaning Service Jakarta | Cleanox'
     },
     description: {
-      en: 'Outsourcing cleaning services and janitorial staff in Jakarta especially in Jabodetabek. Trained personnel, advanced cleaning equipment, and full HR management.',
-      id: 'Outsourcing jasa kebersihan dan janitor di Jakarta khususnya di Jabodetabek. Tenaga terlatih, peralatan lengkap, dan manajemen HRD penuh.'
+      en: 'Outsourcing cleaning services and janitorial staff in Jakarta especially in Cibubur. Trained personnel, advanced cleaning equipment, and full HR management.',
+      id: 'Outsourcing jasa kebersihan dan janitor di Jakarta khususnya di Cibubur. Tenaga terlatih, peralatan lengkap, dan manajemen HRD penuh.'
     },
     h1: {
-      en: 'Janitor & Cleaning Service Outsourcing in Jakarta especially in Jabodetabek',
-      id: 'Outsourcing Cleaning Service & Janitor di Jakarta khususnya di Jabodetabek'
+      en: 'Janitor & Cleaning Service Outsourcing in Jakarta especially in Cibubur',
+      id: 'Outsourcing Cleaning Service & Janitor di Jakarta khususnya di Cibubur'
     },
     unit: 'cleanox',
     serviceName: { en: 'Outsourcing Cleaning', id: 'Outsourcing Kebersihan' },
     locationName: { en: 'Jakarta (Jabodetabek)', id: 'Jakarta (Jabodetabek)' },
     descriptionDetailed: {
-      en: 'Cleanox provides janitorial outsourcing services for offices, schools, and malls in Jakarta especially in Jabodetabek. We manage recruitment, training, benefits, and replacements so you get hassle-free hygiene.',
-      id: 'Cleanox menyediakan outsourcing janitor untuk kantor, sekolah, dan mal di Jakarta khususnya di Jabodetabek. Kami mengelola rekrutmen, training, BPJS, hingga pengganti jika ada staf yang absen.'
+      en: 'Cleanox provides janitorial outsourcing services for offices, schools, and malls in Jakarta especially in Cibubur. We manage recruitment, training, benefits, and replacements so you get hassle-free hygiene.',
+      id: 'Cleanox menyediakan outsourcing janitor untuk kantor, sekolah, dan mal di Jakarta khususnya di Cibubur. Kami mengelola rekrutmen, training, BPJS, hingga pengganti jika ada staf yang absen.'
     },
     features: [
       {

@@ -95,21 +95,21 @@ export const TestimonialsSection: FC = () => {
   const currentTestimonials = sessions[session];
 
   return (
-    <section className="py-32 px-8 bg-white overflow-hidden relative">
+    <section className="py-24 md:py-32 px-5 sm:px-8 bg-white overflow-hidden relative">
       <div className="max-w-[1400px] mx-auto relative z-10">
         {/* Header */}
-        <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
-          <div className="max-w-2xl">
+        <div className="flex flex-col items-center justify-center text-center mb-14 md:mb-20 gap-8">
+          <div className="max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#fc8018]/10 bg-[#fc8018]/5 mb-8 group cursor-default">
               <Star className="h-4 w-4 fill-[#fc8018] text-[#fc8018] group-hover:scale-110 transition-transform" />
-              <span className="text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-[#fc8018]">{t('testi_eyebrow')}</span>
+              <span className="text-xs sm:text-sm md:text-base font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-[#fc8018]">{t('testi_eyebrow')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary tracking-tight leading-tight">
               {t('testi_title_p1')} <br /><span className="text-primary/40">{t('testi_title_p2')}</span>
             </h3>
           </div>
           {/* Session dots */}
-          <div className="flex gap-3 mb-4">
+          <div className="flex gap-3">
             {sessions.map((_, i) => (
               <button
                 key={i}

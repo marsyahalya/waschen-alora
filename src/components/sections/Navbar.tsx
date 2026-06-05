@@ -7,7 +7,7 @@ import waschenLogo from '@/assets/logo/waschen.png';
 import ikmLogo from '@/assets/logo/ikm.png';
 import cleanoxLogo from '@/assets/logo/cleanox.png';
 import { Button } from '@/components/ui/Button';
-import { Menu, ChevronDown, ExternalLink } from 'lucide-react';
+import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import type { FC } from 'react';
@@ -39,6 +39,7 @@ export const Navbar: FC = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -59,6 +60,7 @@ export const Navbar: FC = () => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    setMobileOpen(false);
     const targetId = href.replace('/#', '').replace('#', '');
     if (pathname !== '/') {
       router.push('/#' + targetId);
@@ -99,7 +101,7 @@ export const Navbar: FC = () => {
     }`;
 
   return (
-    <nav id="main-navbar" className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-500 px-8 ${
+    <nav id="main-navbar" className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-500 px-4 sm:px-8 ${
       isScrolled
         ? 'py-4 bg-white shadow-md border-b border-gray-100'
         : 'py-6 bg-transparent'
@@ -224,12 +226,81 @@ export const Navbar: FC = () => {
           </div>
 
           <div className="md:hidden">
-            <Button variant="ghost" size="icon" className={`rounded-full ${isScrolled ? 'hover:bg-black/5 text-gray-700' : 'hover:bg-white/10 text-white'}`}>
-              <Menu className="h-5 w-5" />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setMobileOpen((open) => !open)}
+              aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={mobileOpen}
+              className={`rounded-full ${isScrolled ? 'hover:bg-black/5 text-gray-700' : 'hover:bg-white/10 text-white'}`}
+            >
+              {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className="md:hidden absolute left-4 right-4 top-full mt-2 rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden"
+          >
+            <div className="p-3">
+              {navLinks.map((link) => {
+                if (link.type === 'dropdown') {
+                  return (
+                    <div key={link.name} className="border-b border-gray-100 pb-2 mb-2">
+                      <a
+                        href={link.href}
+                        onClick={(e) => handleNavClick(e, link.href)}
+                        className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-primary hover:bg-primary/5"
+                      >
+                        {link.name}
+                        <ChevronDown className="h-4 w-4" />
+                      </a>
+                      <div className="grid gap-1 px-2 pb-2">
+                        {serviceUnits.map((unit) => (
+                          <a
+                            key={unit.name}
+                            href={unit.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMobileOpen(false)}
+                            className="flex items-center gap-3 rounded-xl px-3 py-2.5 hover:bg-[#fc8018]/5"
+                          >
+                            <div className="h-9 w-9 rounded-lg bg-gray-50 flex items-center justify-center p-2 shrink-0">
+                              <Image src={unit.logo} alt={unit.name} className="w-full h-full object-contain" />
+                            </div>
+                            <div className="min-w-0 flex-1">
+                              <div className="text-sm font-semibold text-primary">{unit.name}</div>
+                              <div className="text-[11px] text-primary/50 leading-tight">{unit.desc[language as 'en' | 'id']}</div>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block rounded-xl px-4 py-3 text-sm font-semibold text-primary hover:bg-primary/5"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

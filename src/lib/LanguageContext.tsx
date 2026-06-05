@@ -81,6 +81,19 @@ export const translations: Record<string, { en: string; id: string }> = {
   gallery_social_title: { en: "Social Media Updates", id: "Pembaruan Media Sosial" },
   gallery_social_desc: { en: "Get real-time updates on our operations and community impact @waschenalora", id: "Dapatkan pembaruan langsung tentang operasional dan dampak komunitas kami @waschenalora" },
 
+  // Location Search
+  location_find_us: { en: "Find Us", id: "Temukan Kami" },
+  location_title: { en: "Our Operations & Facilities", id: "Operasional & Fasilitas Kami" },
+  location_subtitle: { en: "Select a unit to view on Google Maps", id: "Pilih unit untuk melihat lokasi di Google Maps" },
+  location_search_placeholder: { en: "Search by area or address...", id: "Cari berdasarkan area atau alamat..." },
+  location_group_head_office: { en: "Waschen Alora Indonesia Head Office", id: "Kantor Pusat Waschen Alora Indonesia" },
+  location_group_healthcare: { en: "Business Unit: Hospitality and Healthcare Laundry", id: "Unit Bisnis: Laundry Hospitality dan Healthcare" },
+  location_group_commercial: { en: "Business Unit: Commercial Laundry", id: "Unit Bisnis: Laundry Komersial" },
+  location_head_office: { en: "Head Office", id: "Kantor Pusat" },
+  location_ikm: { en: "IKM Laundry", id: "IKM Laundry" },
+  location_no_results: { en: "No locations found", id: "Lokasi tidak ditemukan" },
+  location_no_grouped_results: { en: "No grouped locations found", id: "Lokasi dalam grup tidak ditemukan" },
+
   // Testimonials
   testi_eyebrow: { en: "Voices of Trust", id: "Suara Kepercayaan" },
   testi_title_p1: { en: "What Our Partners", id: "Apa Kata" },
