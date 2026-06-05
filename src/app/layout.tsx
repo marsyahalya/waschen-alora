@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     template: "%s | Waschen Alora Indonesia"
   },
   description: "PT Waschen Alora Indonesia - Leading holding company providing commercial laundry, linen management, healthcare laundry, and professional home & office cleaning services in Indonesia.",
-  metadataBase: new URL("https://waschen-alora.com"),
+  metadataBase: new URL("https://wascenalora.com"),
   openGraph: {
     title: "Waschen Alora Indonesia",
     description: "Complete commercial laundry, linen management, and cleaning solutions for B2B and B2C sectors. Precision, hygiene, and trust in every service.",
-    url: "https://waschen-alora.com",
+    url: "https://wascenalora.com",
     siteName: "Waschen Alora Indonesia",
     locale: "id_ID",
     type: "website",

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { keywordsData } from '@/lib/keywords-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://waschen-alora.com';
+  const baseUrl = 'https://wascenalora.com';
   
   const mainPages = [
     {

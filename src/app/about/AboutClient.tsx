@@ -10,7 +10,7 @@ import { useState, useEffect, type FC } from 'react';
 
 // Import images
 import programAward from '@/assets/alora/aloraaward.png';
-import programOuting from '@/assets/about/program_outing.png';
+import programOuting from '@/assets/alora/aloraouting-new.jpg';
 import programAcademy from '@/assets/alora/aloraacademy.png';
 import companyFacility from '@/assets/about/company_facility.png';
 
@@ -25,16 +25,16 @@ export const AboutClient: FC = () => {
       tag: "Recognition"
     },
     {
-      title: t('about_program_academy_title'),
-      desc: t('about_program_academy_desc'),
-      image: programAcademy,
-      tag: "Development"
-    },
-    {
       title: t('about_program_outing_title'),
       desc: t('about_program_outing_desc'),
       image: programOuting,
       tag: "Engagement"
+    },
+    {
+      title: t('about_program_academy_title'),
+      desc: t('about_program_academy_desc'),
+      image: programAcademy,
+      tag: "Development"
     }
   ];
 
@@ -403,10 +403,12 @@ const PreciseCircularUI: FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setRadius(340);
+      } else if (window.innerWidth >= 768) {
+        setRadius(280);
       } else {
-        setRadius(124);
+        setRadius(110);
       }
     };
     handleResize();
@@ -415,7 +417,7 @@ const PreciseCircularUI: FC = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-8 bg-gradient-to-b from-white to-gray-50/50 border-t border-gray-100 relative overflow-hidden flex items-center justify-center">
+    <section className="py-16 md:py-24 px-6 sm:px-12 bg-gradient-to-b from-white to-gray-50/50 border-t border-gray-100 relative overflow-hidden flex items-center justify-center">
       {/* Background glowing decorations */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] bg-[#fc8018]/5 rounded-full blur-[170px] pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-primary/5 rounded-full blur-[140px] pointer-events-none" />
@@ -430,7 +432,7 @@ const PreciseCircularUI: FC = () => {
 
       <div className="container max-w-[1200px] mx-auto relative z-10 flex flex-col items-center">
         {/* Circular Wheel UI */}
-        <div className="relative w-[320px] h-[320px] sm:w-[360px] sm:h-[360px] md:w-[780px] md:h-[780px] flex items-center justify-center">
+        <div className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] md:w-[650px] md:h-[650px] lg:w-[780px] lg:h-[780px] flex items-center justify-center">
           {/* Animated dashed outer orbit ring */}
           <motion.div
             animate={{ rotate: 360 }}
@@ -443,13 +445,13 @@ const PreciseCircularUI: FC = () => {
           />
 
           {/* Central Panel Card (Ref Design: light outer ring, solid white inner card) */}
-          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-[350px] md:h-[350px] rounded-full bg-primary/5 flex items-center justify-center border-4 border-white shadow-xl relative z-10">
-            <div className="w-[7.5rem] h-[7.5rem] sm:w-36 sm:h-36 md:w-[280px] md:h-[280px] rounded-full bg-white shadow-md border border-gray-100 flex flex-col items-center justify-center text-center p-5 sm:p-6">
-              <Compass className="h-5 w-5 sm:h-6 sm:w-6 md:h-10 md:w-10 text-[#fc8018] mb-2 sm:mb-3 animate-spin-slow" />
-              <span className="text-primary text-lg sm:text-xl md:text-3xl font-semibold tracking-widest uppercase">
+          <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full bg-primary/5 flex items-center justify-center border-4 border-white shadow-xl relative z-10">
+            <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-[240px] md:h-[240px] lg:w-[280px] lg:h-[280px] rounded-full bg-white shadow-md border border-gray-100 flex flex-col items-center justify-center text-center p-3 sm:p-6">
+              <Compass className="h-4 w-4 sm:h-6 sm:w-6 md:h-10 md:w-10 text-[#fc8018] mb-1 sm:mb-3 animate-spin-slow" />
+              <span className="text-primary text-sm sm:text-xl md:text-3xl font-semibold tracking-widest uppercase">
                 PRECISE
               </span>
-              <span className="text-primary/45 text-[8px] sm:text-[9px] md:text-[12px] font-normal uppercase tracking-[0.12em] sm:tracking-[0.2em] mt-1.5">
+              <span className="text-primary/45 text-[7px] sm:text-[9px] md:text-[12px] font-normal uppercase tracking-[0.12em] sm:tracking-[0.2em] mt-1">
                 {language === 'id' ? 'Nilai Perusahaan' : 'Corporate Values'}
               </span>
             </div>
@@ -488,15 +490,15 @@ const PreciseCircularUI: FC = () => {
                   {/* Main Circular Button */}
                   <button
                     onClick={() => setSelectedIndex(i)}
-                    className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 rounded-full bg-white border-2 border-gray-100 hover:border-[#fc8018] text-[#49122E] hover:text-[#fc8018] shadow-[0_10px_35px_rgba(0,0,0,0.05)] cursor-pointer transition-all duration-300 flex items-center justify-center relative hover:scale-105 active:scale-95 group-hover:shadow-[0_15px_40px_rgba(252,128,24,0.15)]"
+                    className="w-11 h-11 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-white border-2 border-gray-100 hover:border-[#fc8018] text-[#49122E] hover:text-[#fc8018] shadow-[0_10px_35px_rgba(0,0,0,0.05)] cursor-pointer transition-all duration-300 flex items-center justify-center relative hover:scale-105 active:scale-95 group-hover:shadow-[0_15px_40px_rgba(252,128,24,0.15)]"
                   >
                     {/* Small Floating Corner Badge displaying the Letter */}
-                    <div className="absolute top-0 right-0 w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-[#fc8018] text-white text-[9px] sm:text-[10px] md:text-xs font-normal flex items-center justify-center border-2 border-white shadow-sm z-30 transition-transform duration-300 group-hover:scale-110">
+                    <div className="absolute top-0 right-0 w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full bg-[#fc8018] text-white text-[8px] sm:text-[10px] md:text-xs font-normal flex items-center justify-center border-2 border-white shadow-sm z-30 transition-transform duration-300 group-hover:scale-110">
                       {value.letter}
                     </div>
 
                     {/* Icon */}
-                    <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 md:h-9 md:w-9 transition-transform duration-300 group-hover:rotate-[8deg]" />
+                    <IconComponent className="h-4 w-4 sm:h-6 sm:w-6 md:h-9 md:w-9 transition-transform duration-300 group-hover:rotate-[8deg]" />
                   </button>
                 </motion.div>
               </div>

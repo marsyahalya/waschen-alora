@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PT Waschen Alora Indonesia - Laundry Komersial & Jasa Kebersihan",
     description: "Solusi commercial laundry, manajemen linen rumah sakit, laundry hotel, laundry korporat, serta cleaning service rumah & kantor terpercaya.",
-    url: "https://waschen-alora.com",
+    url: "https://wascenalora.com",
     type: "website",
   }
 };
@@ -27,10 +27,10 @@ export default function Home() {
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://waschen-alora.com/#organization",
+    "@id": "https://wascenalora.com/#organization",
     "name": "PT Waschen Alora Indonesia",
-    "url": "https://waschen-alora.com",
-    "logo": "https://waschen-alora.com/logo-new-landscape.png",
+    "url": "https://wascenalora.com",
+    "logo": "https://wascenalora.com/logo-new-landscape.png",
     "sameAs": [
       "https://waschenlaundry.com/",
       "https://www.ikmalora.com/",
@@ -41,12 +41,12 @@ export default function Home() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://waschen-alora.com/#local-business",
+    "@id": "https://wascenalora.com/#local-business",
     "name": "PT Waschen Alora Indonesia",
-    "image": "https://waschen-alora.com/og-image.jpg",
+    "image": "https://wascenalora.com/og-image.jpg",
     "telephone": "+6285122333371",
     "email": "waschen.aloraindonesia@gmail.com",
-    "url": "https://waschen-alora.com",
+    "url": "https://wascenalora.com",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",

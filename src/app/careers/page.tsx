@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Karir | Waschen Alora Indonesia',
     description: 'Temukan peluang karir menarik di PT Waschen Alora Indonesia. Tumbuh dan berkembang bersama tim profesional kami.',
-    url: 'https://waschen-alora.com/careers',
+    url: 'https://wascenalora.com/careers',
     siteName: 'Waschen Alora Indonesia',
     locale: 'id_ID',
     type: 'website',
@@ -23,13 +23,13 @@ export default function CareersPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Beranda",
-        "item": "https://waschen-alora.com"
+        "item": "https://wascenalora.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Karir",
-        "item": "https://waschen-alora.com/careers"
+        "item": "https://wascenalora.com/careers"
       }
     ]
   };

@@ -18,24 +18,24 @@ export const Trust: FC = () => {
   ];
 
   return (
-    <section className="pt-20 pb-32 px-8 bg-white relative overflow-hidden font-poppins">
+    <section className="pt-20 pb-32 px-6 sm:px-12 md:px-16 lg:px-8 bg-white relative overflow-hidden font-poppins">
       <div className="max-w-[1300px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           {/* Left Column: Circular Core Values */}
-          <div className="lg:w-1/2 w-full flex items-center justify-center">
+          <div className="lg:w-1/2 w-full flex items-center justify-center py-10 md:py-0">
             <AnimatedContent delay={0.2} distance={30} direction="vertical">
-              <div className="relative w-[520px] h-[520px]">
+              <div className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px] lg:w-[520px] lg:h-[520px]">
                 
                 {/* Outer rotating ring (dashed) */}
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                   className="absolute rounded-full border-2 border-dashed border-[#fc8018]/20"
-                  style={{ inset: "30px" }}
+                  style={{ inset: "10%" }}
                 />
 
                 {/* Middle static ring */}
-                <div className="absolute rounded-full border border-gray-200/50" style={{ inset: "70px" }} />
+                <div className="absolute rounded-full border border-gray-200/50" style={{ inset: "20%" }} />
 
                 {/* Inner gradient ring */}
                 <motion.div
@@ -43,7 +43,7 @@ export const Trust: FC = () => {
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute rounded-full"
                   style={{
-                    inset: "140px",
+                    inset: "30%",
                     background: "conic-gradient(from 0deg, #fc8018 0%, #49122E 25%, #fc8018 50%, #49122E 75%, #fc8018 100%)",
                     padding: "3px",
                     WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
@@ -58,11 +58,10 @@ export const Trust: FC = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
-                  className="absolute z-10 w-32 h-32 rounded-full bg-gradient-to-br from-[#49122E] to-[#2d0a1b] flex flex-col items-center justify-center shadow-xl"
-                  style={{ top: "calc(50% - 64px)", left: "calc(50% - 64px)" }}
+                  className="absolute z-10 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-[#49122E] to-[#2d0a1b] flex flex-col items-center justify-center shadow-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 >
-                  <span className="text-white/90 text-xs font-semibold uppercase tracking-[0.25em] mb-1">Core</span>
-                  <span className="text-white text-lg font-bold">Values</span>
+                  <span className="text-white/90 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em] mb-1">Core</span>
+                  <span className="text-white text-sm sm:text-lg font-bold">Values</span>
                 </motion.div>
 
                 {/* Connector lines (dotted) */}
@@ -76,13 +75,13 @@ export const Trust: FC = () => {
                     className="absolute z-0"
                     style={{
                       width: "2px",
-                      height: "82px",
+                      height: "15%",
                       borderLeft: "2px dotted",
                       borderColor: hoveredIndex === i ? "#fc8018" : "#d1d5db",
                       top: "50%",
                       left: "calc(50% - 1px)",
                       transformOrigin: "top center",
-                      transform: `rotate(${angle}deg) translateY(64px)`,
+                      transform: `rotate(${angle}deg) translateY(40px)`,
                       transition: "border-color 0.3s ease",
                     }}
                   />
@@ -94,10 +93,10 @@ export const Trust: FC = () => {
                   const isHovered = hoveredIndex === i;
                   
                   const itemStyles: React.CSSProperties[] = [
-                    { top: "-10px", left: "50%", transform: "translateX(-50%)" },
-                    { top: "50%", right: "-10px", transform: "translateY(-50%)" },
-                    { bottom: "-10px", left: "50%", transform: "translateX(-50%)" },
-                    { top: "50%", left: "-10px", transform: "translateY(-50%)" },
+                    { top: "-5%", left: "50%", transform: "translateX(-50%)" },
+                    { top: "50%", right: "-5%", transform: "translateY(-50%)" },
+                    { bottom: "-5%", left: "50%", transform: "translateX(-50%)" },
+                    { top: "50%", left: "-5%", transform: "translateY(-50%)" },
                   ];
 
                   return (
@@ -126,17 +125,17 @@ export const Trust: FC = () => {
                             backgroundColor: "#ffffff",
                           }}
                           transition={{ duration: 0.3 }}
-                          className="w-14 h-14 rounded-full flex items-center justify-center border-2"
+                          className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center border-2"
                           style={{ borderColor: item.color }}
                         >
                           <Icon 
-                            className="h-6 w-6 transition-colors duration-300" 
+                            className="h-4 w-4 sm:h-5 sm:h-5 md:h-6 md:w-6 transition-colors duration-300" 
                             style={{ color: isHovered ? "#ffffff" : item.color }}
                           />
                         </motion.div>
 
                         <span
-                          className="text-xs md:text-[13px] font-semibold text-center max-w-[150px] leading-snug transition-colors duration-300"
+                          className="text-[10px] sm:text-xs md:text-[13px] font-semibold text-center max-w-[100px] sm:max-w-[150px] leading-snug transition-colors duration-300"
                           style={{ color: isHovered ? item.color : "#374151" }}
                         >
                           {item.title}
