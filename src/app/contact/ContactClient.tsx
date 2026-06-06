@@ -21,12 +21,20 @@ export const ContactClient: FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const subject = encodeURIComponent(`Pesan dari ${formData.name}`);
-    const body = encodeURIComponent(
-      `Nama: ${formData.name}\nEmail: ${formData.email}\n\nPesan:\n${formData.message}`
-    );
+    const phoneNumber = "6285122333371";
+    const message = `Halo Waschen Alora Indonesia
+
+Saya ingin mengajukan permintaan layanan dengan detail berikut:
+▸ Nama: ${formData.name}
+▸ Email: ${formData.email}
+▸ Kebutuhan: ${formData.message}
+
+Mohon informasi lebih lanjut terkait layanan yang sesuai dengan kebutuhan saya. Terima kasih atas bantuan dan responnya, terima kasih!`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
-    window.location.href = `mailto:waschen.aloraindonesia@gmail.com?subject=${subject}&body=${body}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
