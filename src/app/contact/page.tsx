@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hubungi Kami | Waschen Alora Indonesia',
     description: 'Hubungi tim khusus kami untuk kemitraan korporat, laundry rumah sakit & hotel, atau jasa pembersihan komersial.',
-    url: 'https://waschen-alora.com/contact',
+    url: 'https://wascenalora.com/contact',
     siteName: 'Waschen Alora Indonesia',
     locale: 'id_ID',
     type: 'website',
@@ -23,13 +23,13 @@ export default function ContactPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Beranda",
-        "item": "https://waschen-alora.com"
+        "item": "https://wascenalora.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Hubungi Kami",
-        "item": "https://waschen-alora.com/contact"
+        "item": "https://wascenalora.com/contact"
       }
     ]
   };

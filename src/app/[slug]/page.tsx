@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  const url = `https://waschen-alora.com/${slug}`;
+  const url = `https://wascenalora.com/${slug}`;
 
   return {
     title: data.title.id, // Primary title in Indonesian for local SEO
@@ -66,10 +66,10 @@ export default async function KeywordPage({ params }: Props) {
   const businessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': `https://waschen-alora.com/#local-business-${slug}`,
+    '@id': `https://wascenalora.com/#local-business-${slug}`,
     name: 'PT Waschen Alora Indonesia',
-    image: 'https://waschen-alora.com/og-image.jpg',
-    url: `https://waschen-alora.com/${slug}`,
+    image: 'https://wascenalora.com/og-image.jpg',
+    url: `https://wascenalora.com/${slug}`,
     telephone: '+6285122333371',
     priceRange: '$$',
     address: {
@@ -145,13 +145,13 @@ export default async function KeywordPage({ params }: Props) {
         '@type': 'ListItem',
         position: 1,
         name: 'Beranda',
-        item: 'https://waschen-alora.com',
+        item: 'https://wascenalora.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: data.serviceName.id,
-        item: `https://waschen-alora.com/${slug}`,
+        item: `https://wascenalora.com/${slug}`,
       },
     ],
   };

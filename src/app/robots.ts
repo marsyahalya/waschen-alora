@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://waschen-alora.com/sitemap.xml',
+    sitemap: 'https://wascenalora.com/sitemap.xml',
   };
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tentang Kami | Waschen Alora Indonesia',
     description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat PRECISE, serta program peningkatan kualitas tim.',
-    url: 'https://waschen-alora.com/about',
+    url: 'https://wascenalora.com/about',
     siteName: 'Waschen Alora Indonesia',
     locale: 'id_ID',
     type: 'website',
@@ -23,13 +23,13 @@ export default function AboutPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Beranda",
-        "item": "https://waschen-alora.com"
+        "item": "https://wascenalora.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Tentang Kami",
-        "item": "https://waschen-alora.com/about"
+        "item": "https://wascenalora.com/about"
       }
     ]
   };
