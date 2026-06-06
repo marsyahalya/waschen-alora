@@ -52,7 +52,7 @@ export const ContactSection: FC = () => {
             
             <div className="space-y-6">
                <a
-                 href="https://wa.me/6285122333371?text=Halo%2C%20saya%20ingin%20mengirim%20permintaan%20layanan"
+                 href={`https://wa.me/6285122333371?text=${encodeURIComponent("Halo Waschen Alora Indonesia\n\nSaya ingin mengajukan permintaan layanan dengan detail berikut:\n▸ Nama: \n▸ Email: \n▸ Kebutuhan: \n\nMohon informasi lebih lanjut terkait layanan yang sesuai dengan kebutuhan saya. Terima kasih atas bantuan dan responnya, terima kasih!")}`}
                  target="_blank"
                  rel="noopener noreferrer"
                  className="w-full h-16 bg-primary hover:bg-primary/90 text-white text-base font-semibold rounded-full flex gap-3 items-center justify-center shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-95"
@@ -61,7 +61,7 @@ export const ContactSection: FC = () => {
                </a>
                
                <a
-                 href="https://wa.me/6285122333371?text=Halo%2C%20saya%20ingin%20meminta%20proposal%20detail"
+                 href={`https://wa.me/6285122333371?text=${encodeURIComponent("Halo Waschen Alora Indonesia\n\nSaya tertarik untuk melihat proposal detail mengenai layanan Anda. Mohon informasi lebih lanjut.\n\nTerima kasih!")}`}
                  target="_blank"
                  rel="noopener noreferrer"
                  className="w-full h-16 text-primary hover:bg-primary/5 text-base font-semibold rounded-full flex items-center justify-center transition-all border border-gray-200"
