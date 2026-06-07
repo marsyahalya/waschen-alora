@@ -21,9 +21,9 @@ import {
 } from 'lucide-react';
 
 // Import logos for the units
-import cleanoxLogo from '@/assets/logo/cleanox.png';
-import ikmLogo from '@/assets/logo/ikm.png';
-import waschenLogo from '@/assets/logo/waschen.png';
+import cleanoxLogo from '@/assets/logo/cleanox.webp';
+import ikmLogo from '@/assets/logo/ikm.webp';
+import waschenLogo from '@/assets/logo/waschen.webp';
 
 interface KeywordLandingClientProps {
   data: KeywordItem;

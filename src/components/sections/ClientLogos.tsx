@@ -1,11 +1,11 @@
 "use client";
 import { LogoLoop } from '@/components/animations/LogoLoop';
-import ekaHospital from '@/assets/eka-hospital.png';
-import bundaLogo from '@/assets/bunda-logo.png';
-import columbiaHospital from '@/assets/columbia-asia.png';
-import grandFamily from '@/assets/grand-family.png';
-import tuguIbu from '@/assets/tugu-ibu.png';
-import permataCibubur from '@/assets/permata-cibubur.png';
+import ekaHospital from '@/assets/eka-hospital.webp';
+import bundaLogo from '@/assets/bunda-logo.webp';
+import columbiaHospital from '@/assets/columbia-asia.webp';
+import grandFamily from '@/assets/grand-family.webp';
+import tuguIbu from '@/assets/tugu-ibu.webp';
+import permataCibubur from '@/assets/permata-cibubur.webp';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export const ClientLogos = () => {
