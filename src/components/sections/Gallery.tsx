@@ -4,17 +4,17 @@ import type { FC } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 
 // Import all 13 images from service gallery
-import cleanox1 from '@/assets/services/gallery/cleanox1.png';
-import cleanox2 from '@/assets/services/gallery/cleanox2.png';
-import cleanox3 from '@/assets/services/gallery/cleanox3.png';
-import cleanox4 from '@/assets/services/gallery/cleanox4.png';
-import ikm1 from '@/assets/services/gallery/ikm1.png';
-import ikm2 from '@/assets/services/gallery/ikm2.png';
-import ikm3 from '@/assets/services/gallery/ikm3.png';
-import ikm4 from '@/assets/services/gallery/ikm4.png';
-import waschen1 from '@/assets/services/gallery/waschen1.png';
-import waschen2 from '@/assets/services/gallery/waschen2.png';
-import waschen3 from '@/assets/services/gallery/waschen3.png';
+import cleanox1 from '@/assets/services/gallery/cleanox1.webp';
+import cleanox2 from '@/assets/services/gallery/cleanox2.webp';
+import cleanox3 from '@/assets/services/gallery/cleanox3.webp';
+import cleanox4 from '@/assets/services/gallery/cleanox4.webp';
+import ikm1 from '@/assets/services/gallery/ikm1.webp';
+import ikm2 from '@/assets/services/gallery/ikm2.webp';
+import ikm3 from '@/assets/services/gallery/ikm3.webp';
+import ikm4 from '@/assets/services/gallery/ikm4.webp';
+import waschen1 from '@/assets/services/gallery/waschen1.webp';
+import waschen2 from '@/assets/services/gallery/waschen2.webp';
+import waschen3 from '@/assets/services/gallery/waschen3.webp';
 
 const galleryImages = [
   waschen1, waschen2, waschen3,

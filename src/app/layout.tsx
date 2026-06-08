@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Waschen Alora Indonesia",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Waschen Alora Indonesia | Commercial Laundry & Cleaning",
     description: "Complete commercial laundry, linen management, and cleaning solutions for B2B and B2C sectors.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "google-site-verification-code",

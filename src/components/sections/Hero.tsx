@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/lib/LanguageContext';
 
-import imgServicesLagi from '@/assets/services-lagi.png';
+import imgServicesLagi from '@/assets/services-lagi.webp';
 
 const words = ["professional", "resilience", "collaboration", "innovation", "sustainability", "excellence"];
 
