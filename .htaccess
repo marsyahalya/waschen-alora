@@ -19,7 +19,7 @@
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # If the request is for a real directory, serve it
+  # If the request is for a real directory,serve it
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
