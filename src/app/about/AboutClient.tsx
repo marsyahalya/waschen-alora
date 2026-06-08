@@ -12,7 +12,7 @@ import { useState, useEffect, type FC } from 'react';
 import programAward from '@/assets/alora/aloraaward.webp';
 import programOuting from '@/assets/alora/aloraouting-new.webp';
 import programAcademy from '@/assets/alora/aloraacademy.webp';
-import companyFacility from '@/assets/about/company_facility.webp';
+import companyFacility from '@/assets/services/gallery/waschen1.webp';
 
 export const AboutClient: FC = () => {
   const { t } = useLanguage();
