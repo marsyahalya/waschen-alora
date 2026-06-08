@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat PRECISE, serta program peningkatan kualitas tim seperti Alora Award, Alora Outing, dan Alora Academy.',
   openGraph: {
     title: 'Tentang Kami | Waschen Alora Indonesia',
-    description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat PRECISE, serta program peningkatan kualitas tim.',
+    description: 'Kenali lebih dekat PT Waschen Alora Indonesia, visi & misi kami, nilai-nilai korporat, serta program peningkatan kualitas tim.',
     url: 'https://wascenalora.com/about',
     siteName: 'Waschen Alora Indonesia',
     locale: 'id_ID',

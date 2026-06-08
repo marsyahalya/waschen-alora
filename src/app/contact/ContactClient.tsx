@@ -172,7 +172,7 @@ Mohon informasi lebih lanjut terkait layanan yang sesuai dengan kebutuhan saya. 
             {/* Contact Form Column */}
             <div className="lg:col-span-7">
               <div className="bg-white/80 backdrop-blur-md p-12 lg:p-20 rounded-[3.5rem] shadow-[0_30px_70px_rgba(0,0,0,0.04)] border border-gray-100/50 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-full h-2 bg-[#fc8018]" />
+                <div className="absolute top-0 right-0 w-full h-2 bg-[#fc8019]" />
                 <div className="mb-14">
                   <h3 className="text-2xl font-bold text-primary mb-4 tracking-tight">{t('contact_form_title')}</h3>
                   <p className="text-primary/45 font-medium leading-relaxed">{t('contact_form_desc')}</p>

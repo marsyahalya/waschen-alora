@@ -8,7 +8,6 @@ import { AnimatedContent } from '@/components/animations/AnimatedContent';
 import { SocialMediaSection } from '@/components/sections/SocialMedia';
 import { useState, useEffect, type FC } from 'react';
 
-// Import images
 import programAward from '@/assets/alora/aloraaward.webp';
 import programOuting from '@/assets/alora/aloraouting-new.webp';
 import programAcademy from '@/assets/alora/aloraacademy.webp';
