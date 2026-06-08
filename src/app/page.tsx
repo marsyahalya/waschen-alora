@@ -30,7 +30,7 @@ export default function Home() {
     "@id": "https://wascenalora.com/#organization",
     "name": "PT Waschen Alora Indonesia",
     "url": "https://wascenalora.com",
-    "logo": "https://wascenalora.com/logo-new-landscape.png",
+    "logo": "https://wascenalora.com/logo-new-landscape.webp",
     "sameAs": [
       "https://waschenlaundry.com/",
       "https://www.ikmalora.com/",
@@ -43,7 +43,7 @@ export default function Home() {
     "@type": "LocalBusiness",
     "@id": "https://wascenalora.com/#local-business",
     "name": "PT Waschen Alora Indonesia",
-    "image": "https://wascenalora.com/og-image.jpg",
+    "image": "https://wascenalora.com/og-image.webp",
     "telephone": "+6285122333371",
     "email": "waschen.aloraindonesia@gmail.com",
     "url": "https://wascenalora.com",

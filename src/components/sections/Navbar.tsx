@@ -2,10 +2,10 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
-import logoAlora from '@/assets/logo-new-landscape.png';
-import waschenLogo from '@/assets/logo/waschen.png';
-import ikmLogo from '@/assets/logo/ikm.png';
-import cleanoxLogo from '@/assets/logo/cleanox.png';
+import logoAlora from '@/assets/logo-new-landscape.webp';
+import waschenLogo from '@/assets/logo/waschen.webp';
+import ikmLogo from '@/assets/logo/ikm.webp';
+import cleanoxLogo from '@/assets/logo/cleanox.webp';
 import { Button } from '@/components/ui/Button';
 import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';

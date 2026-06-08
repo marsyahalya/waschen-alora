@@ -5,12 +5,12 @@ import { Star } from 'lucide-react';
 import Image, { type StaticImageData } from 'next/image';
 import { useLanguage } from '@/lib/LanguageContext';
 
-import imgHaji from '@/assets/testimoni/haji.png';
-import imgTni from '@/assets/testimoni/tni.png';
-import imgB2c from '@/assets/testimoni/b2c.png';
-import imgB2bRs from '@/assets/testimoni/b2b-rs.png';
-import imgCleanoxRs from '@/assets/testimoni/cleanox-rs.png';
-import imgHospitality from '@/assets/testimoni/hospitality.png';
+import imgHaji from '@/assets/testimoni/haji.webp';
+import imgTni from '@/assets/testimoni/tni.webp';
+import imgB2c from '@/assets/testimoni/b2c.webp';
+import imgB2bRs from '@/assets/testimoni/b2b-rs.webp';
+import imgCleanoxRs from '@/assets/testimoni/cleanox-rs.webp';
+import imgHospitality from '@/assets/testimoni/hospitality.webp';
 
 type Testi = {
   quote: string;

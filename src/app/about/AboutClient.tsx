@@ -9,10 +9,10 @@ import { SocialMediaSection } from '@/components/sections/SocialMedia';
 import { useState, useEffect, type FC } from 'react';
 
 // Import images
-import programAward from '@/assets/alora/aloraaward.png';
-import programOuting from '@/assets/alora/aloraouting-new.jpg';
-import programAcademy from '@/assets/alora/aloraacademy.png';
-import companyFacility from '@/assets/about/company_facility.png';
+import programAward from '@/assets/alora/aloraaward.webp';
+import programOuting from '@/assets/alora/aloraouting-new.webp';
+import programAcademy from '@/assets/alora/aloraacademy.webp';
+import companyFacility from '@/assets/about/company_facility.webp';
 
 export const AboutClient: FC = () => {
   const { t } = useLanguage();

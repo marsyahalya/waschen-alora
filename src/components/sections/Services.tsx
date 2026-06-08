@@ -6,12 +6,12 @@ import { GradientText } from '@/components/animations/GradientText';
 import { AnimatedContent } from '@/components/animations/AnimatedContent';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/LanguageContext';
-import cleanoxImg from '@/assets/services/services-cleanox.png';
-import ikmImg from '@/assets/services/services-ikm.png';
-import waschenImg from '@/assets/services/services-waschen.png';
-import cleanoxLogo from '@/assets/logo/cleanox.png';
-import ikmLogo from '@/assets/logo/ikm.png';
-import waschenLogo from '@/assets/logo/waschen.png';
+import cleanoxImg from '@/assets/services/services-cleanox.webp';
+import ikmImg from '@/assets/services/services-ikm.webp';
+import waschenImg from '@/assets/services/services-waschen.webp';
+import cleanoxLogo from '@/assets/logo/cleanox.webp';
+import ikmLogo from '@/assets/logo/ikm.webp';
+import waschenLogo from '@/assets/logo/waschen.webp';
 import type { FC } from 'react';
 
 export const Services: FC = () => {

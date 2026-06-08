@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       images: [
         {
-          url: '/og-image.jpg',
+          url: '/og-image.webp',
           width: 1200,
           height: 630,
           alt: data.title.id,
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: data.title.id,
       description: data.description.id,
-      images: ['/og-image.jpg'],
+      images: ['/og-image.webp'],
     },
   };
 }
@@ -68,7 +68,7 @@ export default async function KeywordPage({ params }: Props) {
     '@type': 'LocalBusiness',
     '@id': `https://wascenalora.com/#local-business-${slug}`,
     name: 'PT Waschen Alora Indonesia',
-    image: 'https://wascenalora.com/og-image.jpg',
+    image: 'https://wascenalora.com/og-image.webp',
     url: `https://wascenalora.com/${slug}`,
     telephone: '+6285122333371',
     priceRange: '$$',

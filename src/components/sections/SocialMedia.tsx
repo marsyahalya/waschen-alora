@@ -6,10 +6,10 @@ import { ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { useState, useEffect, type FC } from 'react';
 
-import waschenMockup from '@/assets/instagram/waschen-mockup.jpeg';
-import lifeatMockup from '@/assets/instagram/lifeat-mockup.jpeg';
-import cleanoxMockup from '@/assets/instagram/cleanox-mockup.jpeg';
-import ytCocokids from '@/assets/instagram/yt-cocokids.jpeg';
+import waschenMockup from '@/assets/instagram/waschen-mockup.webp';
+import lifeatMockup from '@/assets/instagram/lifeat-mockup.webp';
+import cleanoxMockup from '@/assets/instagram/cleanox-mockup.webp';
+import ytCocokids from '@/assets/instagram/yt-cocokids.webp';
 
 // Custom Instagram Icon
 const InstagramIcon: FC<{ className?: string }> = ({ className }) => (
