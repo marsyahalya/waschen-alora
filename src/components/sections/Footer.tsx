@@ -33,7 +33,7 @@ export const Footer: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           {/* Brand */}
           <div className="md:col-span-4">
-            <Link href="/" className="flex items-center group cursor-pointer mb-6">
+            <Link href="/" className="flex items-center group cursor-pointer mb-6" suppressHydrationWarning>
               <Image
                 src={logoAlora}
                 alt="Waschen Alora Indonesia"

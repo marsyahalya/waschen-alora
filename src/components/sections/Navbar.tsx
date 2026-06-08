@@ -109,10 +109,11 @@ export const Navbar: FC = () => {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1 flex justify-start">
-          <Link href="/" className="flex items-center group cursor-pointer">
+          <Link href="/" className="flex items-center group cursor-pointer" suppressHydrationWarning>
             <Image
               src={logoAlora}
               alt="Waschen Alora Indonesia"
+              priority
               className={`h-9 w-auto object-contain transition-all duration-500 group-hover:scale-105 ${
                 !isScrolled ? 'brightness-0 invert' : ''
               }`}

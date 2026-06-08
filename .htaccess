@@ -1,0 +1,105 @@
+# Next.js on Apache / Hostinger
+# =================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve Next.js static files directly
+  RewriteRule ^_next/static/(.*) _next/static/$1 [L]
+  RewriteRule ^_next/data/(.*) _next/data/$1 [L]
+
+  # Serve public static files
+  RewriteRule ^static/(.*) static/$1 [L]
+
+  # Serve video files
+  RewriteRule ^video/(.*) video/$1 [L]
+
+  # If the request is for a real file, serve it
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # If the request is for a real directory, serve it
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Otherwise, serve index.html (SPA style)
+  # This is for static export mode
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  <FilesMatch "\\.(js|css|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|otf|webp|avif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\\.(html|json|xml)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Additional security headers for HTML
+  <FilesMatch "\\.html$">
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+  </FilesMatch>
+</IfModule>
+
+# MIME Types - Ensure correct file serving
+<IfModule mod_mime.c>
+  AddType application/javascript js mjs
+  AddType text/css css
+  AddType image/svg+xml svg svgz
+  AddType application/font-woff woff
+  AddType application/font-woff2 woff2
+  AddType application/vnd.ms-fontobject eot
+  AddType font/ttf ttf
+  AddType font/otf otf
+  AddType image/webp webp
+  AddType image/avif avif
+</IfModule>
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf font/otf
+  AddOutputFilterByType DEFLATE font/woff font/woff2
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "(^#.*#|\.(txt|md|log|json|lock)$)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Protect .env files
+<FilesMatch "\.env$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Protect node_modules and .next
+<IfModule mod_rewrite.c>
+  RewriteRule ^node_modules/(.*) - [F,L]
+  RewriteRule ^\.next/(.*) - [F,L]
+  RewriteRule ^\.git/(.*) - [F,L]
+</IfModule>
+
+# Enable FollowSymlinks (required for some hosting)
+Options +FollowSymLinks
